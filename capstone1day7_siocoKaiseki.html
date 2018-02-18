@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport", content="device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+	<link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+
+	<title>Kaiseki - MarahuyoGuides</title>
+
+	<style>
+
+	/* -- UNIVERSAL STYLING -- */
+
+	* {
+		box-sizing: border-box;
+		margin: 0px;
+	}
+
+		/* -- BEGIN GENERAL TEXT STYLING -- */
+
+	body {
+		padding-top:50px;
+	}
+
+	h1 {
+		font-family: 'Oswald', sans-serif;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-family:'Lato', sans-serif;
+	}
+
+	h3 {
+		font-family:'Lato', sans-serif;
+	}
+
+	p {
+		font-family:'Lato', sans-serif;
+		font-weight: lighter;
+	}
+
+	a {
+		font-family:'Lato', sans-serif;
+	}
+
+	.btn {
+		color: #FFFFFF;
+		background-color: #0B111E;
+		border: 1px solid white;
+	}
+
+	.btn:hover {
+		color: #8B9DC3;
+	}
+
+			/* -- END GENERAL TEXT STYLING -- */
+
+	/* -- BEGIN NAVBAR STYLING -- */
+
+	.navbar-brand {
+		color: #0B111E;
+		font-family:'Oswald', sans-serif;
+		font-weight: bold;
+		font-size: 25px;
+	}
+
+	.navbar {
+		background-color: #0B111E;
+	}
+
+				/* -- END NAVBAR STYLING -- */
+
+/* -- BEGIN BODY SECTION STYLING -- */
+
+	.landingimg {
+		height:100%;
+		width: 100%;
+		transition: .5s ease; /*added */
+  		backface-visibility: hidden;
+  		opacity: 1;
+  		display: inline-block; /*end added*/
+	}
+
+	.abouttext {
+		padding: 15px;
+	}
+
+	.about {
+		padding:20px;
+	}
+
+	.thumbnail {
+		height: 100%;
+	}
+
+	.thumbnail img {
+    	height:250px;
+    	width:400px;
+	}
+
+	.row.display-flex {
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+
+			/* -- END STYLING OF ABOUT SECTION -- */
+
+		/* -- BEGIN STYLING OF FOOTER -- */
+
+	footer {
+		background-color: #0B111E;
+		padding-bottom:5px;
+	}
+
+	.social li {
+		background: none repeat scroll 0 0 #3B5998;
+		border: 2px solid #B5B5B5;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		border-radius: 50%;
+		float: left;
+		height: 36px;
+		line-height: 36px;
+		margin: 0 8px 0 0;
+		padding: 0;
+		text-align: center;
+		width: 36px;
+		transition: all 0.5s ease 0s;
+		-moz-transition: all 0.5s ease 0s;
+		-webkit-transition: all 0.5s ease 0s;
+		-ms-transition: all 0.5s ease 0s;
+		-o-transition: all 0.5s ease 0s;
+	}
+
+	.social li:hover {
+		transform: scale(1.15) rotate(360deg);
+		-webkit-transform: scale(1.1) rotate(360deg);
+		-moz-transform: scale(1.1) rotate(360deg);
+		-ms-transform: scale(1.1) rotate(360deg);
+		-o-transform: scale(1.1) rotate(360deg);
+	}
+
+	.social li a {
+		color: #EDEFF1;
+	}
+
+	.social li:hover {
+		border: 2px solid #2c3e50;
+		background: #0B111E;
+	}
+
+	.social li a i {
+		font-size: 16px;
+		margin: 0 0 0 5px;
+		color: #FFFFFF !important;
+	}
+
+			/* -- END STYLING OF FOOTER -- */
+
+	</style>
+
+</head>
+<body>
+
+	<!-- BEGIN NAVBAR HEADER -->
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="capstone1day7_sioco.html" style="color:#FFFFFF">MarahuyoGuides</a>
+				</div> <!--THIS DIV IS THE WHOLE NAVBAR HEADER -->
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="capstone1day7_sioco.html" style="color:#FFFFFF">Home</a></li> <!--THESE ARE THE LINK BUTTONS -->
+						<li><a href="capstone1day7_siocoAbout.html" style="color:#FFFFFF">About</a></li>
+						<li><a href="capstone1day7_siocoDiscover.html" style="color:#FFFFFF">Discover</a></li>
+						<li class="dropdown">
+								<a href="capstone1day7_siocoDiscover.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoKaizen.html">Kaizen</a></li>
+									<li><a href="capstone1day7_siocoOmotenashi.html">Omotenashi</a></li>
+									<li><a href="capstone1day7_siocoKodawari.html">Kodawari</a></li>
+								</ul>
+						</li>
+						<li class="active"><a href="capstone1day7_siocoExperience.html">Experience</a></li>
+						<li class="dropdown">
+								<a href="capstone1day7_siocoExperience.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoIkebana.html">Ikebana</a></li>
+									<li><a href="capstone1day7_siocoKendo.html">Kendo</a></li>
+									<li><a href="capstone1day7_siocoArchery.html">Kyudo</a></li>
+									<li><a href="capstone1day7_siocoRyokan.html">Ryokan</a></li>
+									<li><a href="capstone1day7_siocoKaiseki.html">Kaiseki</a></li>
+									<li><a href="capstone1day7_siocoShinkansen.html">Shinkansen</a></li>
+									<li><a href="capstone1day7_siocoMochi.html">Mochi</a></li>
+									<li><a href="capstone1day7_siocoSushi.html">Sushi</a></li>
+								</ul>
+							</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+<!-- END NAVBAR DEFAULT or SITE HEADER-->
+
+<!-- BEGIN BODY -->
+
+<!-- BEGIN SECTION ABOUT LANDING -->
+	
+	<div class="container-fluid">
+		<div class="row">
+			<img class="landingimg img-responsive" src="kaiseki.png">
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+				<div class="abouttext">
+					<h1 style="text-align:center">HISTORY</h1>
+						<br>
+					<p style="text-align:justify">Kaiseki (懐石) or kaiseki-ryōri (懐石料理) is a traditional multi-course Japanese dinner. The term also refers to the collection of skills and techniques that allow the preparation of such meals, and is analogous to Western haute cuisine. There are basically two kinds of traditional Japanese meal styles called kaiseki or kaiseki-ryōri. The first, where kaiseki is written as 会席 and kaiseki-ryōri as 会席料理, refers to a set menu of select food served on an individual tray (to each member of a gathering). The second, written as 懐石 and as 懐石料理, refers to the simple meal that the host of a chanoyu gathering serves to the guests before a ceremonial tea, and is also known as cha-kaiseki (茶懐石).</p>
+
+					<p style="text-align:justify">In the present day, kaiseki is a type of art form that balances the taste, texture, appearance, and colors of food. To this end, only fresh seasonal ingredients are used and are prepared in ways that aim to enhance their flavor. Local ingredients are often included as well.Finished dishes are carefully presented on plates that are chosen to enhance both the appearance and the seasonal theme of the meal. Dishes are beautifully arranged and garnished, often with real leaves and flowers, as well as edible garnishes designed to resemble natural plants and animals. Originally, kaiseki comprised a bowl of miso soup and three side dishes; this is now instead the standard form of Japanese-style cuisine generally, referred to as a セット (setto, "set"). Kaiseki has since evolved to include an appetizer, sashimi, a simmered dish, a grilled dish, and a steamed course, in addition to other dishes at the discretion of the chef.</p>
+
+					<small>Article sourced from: Wikipedia Commons ----- Image Created from: Canva</small>
+				</div>
+		</div>
+	</div>
+
+<!-- END SECTION ABOUT LANDING -->
+
+<!-- BEGIN SECTION ABOUT -->
+
+	<br>
+	<hr class="grey">
+	<br>
+	<h1 style="text-align: center">WHERE TO GO</h1>
+	<br>
+	<br>
+	<div class="container">
+		<div class="row display-flex">
+			  <div class="col-sm-6 col-md-6">
+			    <div class="thumbnail">
+			      <img src="kaiseki1.jpg" alt="...">
+			      <div class="caption" style="text-align: justify;">
+			        <h2><a href="https://savorjapan.com/0006052379/">Aji Fukushima</a></h2>
+			        <small>Image is sourced from: Google Images</small>
+			        <p style="font-weight: bold;">Gionmachi Minamigawa 570, Higashiyama-ku, Kyoto-shi, Kyoto, Japan.</p>
+
+			        <p>Situated in the romantic Gion district of Kyoto, Aji Fukushima will introduce kaiseki-virgins to one of the finest cuisines in the world with roots tracing back generations.</p>
+
+			        <p>New and old patrons alike will be welcomed by the beautiful spaces and the accomodating staff of Aji Fukushima.</p>
+
+			        <p>Oh it also has an award called a Michelin star, if anyone is interested. For reservations and it's location, please refer to the links provided.</p>
+
+			    	<p><a href="https://www.google.com/maps/place/Aji+Fukushima/@35.0031082,135.7732232,17z/data=!3m1!4b1!4m5!3m4!1s0x600108c3f6c2dffb:0x16eacce58ba1304b!8m2!3d35.0031082!4d135.7754119" class="btn btn-block" role="button">Locate</a></p>
+
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="col-sm-6 col-md-6">
+			    <div class="thumbnail">
+			      <img src="kaiseki22.jpg" alt="...">
+			      <div class="caption" style="text-align: justify;">
+			        <h2><a href="https://savorjapan.com/0006039174/">Ginza Uchiyama</a></h2>
+			        <small>Image is sourced from: Google Images</small>
+			        <p style="font-weight: bold">Light Bldg. B1F, 2-12-13 Ginza, Chuo-ku, Tokyo, Japan.</p>
+
+			        <p>With Aji Fukushima in Kyoto, we have Ginza Uchiyama in Tokyo. Located deep in the heart of the urban beast of Tokyo city, Ginza Uchiyama is modern, sleek, and beautiful, which is also represented in it's food.</p>
+
+			        <p>Famed for it's Karasumi specialty (salted mullet roe), Ginza Uchiyama breaks convention by adding grean tea on top of it's Karasumi.</p>
+
+			        <p>Just like Aji Fukushima, Ginza Uchiyama also boasts it's own Michelin Star accolades.</p>
+			        
+			        <p><a href="https://www.google.com/maps/place/%E9%8A%80%E5%BA%A7%E3%81%86%E3%81%A1%E5%B1%B1/@35.6721487,139.7678482,17z/data=!4m8!1m2!2m1!1sginza+uchiyama!3m4!1s0x60188be108c85693:0x2088da87fc4c06ad!8m2!3d35.6721499!4d139.7700317" class="btn btn-block" role="button">Locate</a></p>
+			      </div>
+			    </div>
+			  </div>
+		</div>
+	</div>
+
+<!-- END SECTION ABOUT -->
+
+<!-- BEGIN JAVASCRIPT -->
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- END OF JAVASCRIPT -->
+
+
+<!-- BEGIN FOOTER -->
+<footer>
+	<hr class="grey">
+	    <div class="footer navbar-bottom" id="footer">	        
+	        <div class="container">
+	        	<div class="row">
+		           <p class="pull-left" style="color:#ffffff"> Copyright &copy Miguel Martin Sioco 2018. <bold>MarahuyoGuides</bold>.</p>
+		            	<div class="pull-right">
+		                	<ul class="social">
+			                   <li><a href="https://www.facebook.com/miguelmartin.sioco"><i class="fa fa-facebook"></i></a></li>
+			                    <li> <a href="https://www.linkedin.com/in/miguelmartinsioco/"><i class="fa fa-instagram"></i></a></li>
+			                    <li> <a href="https://www.linkedin.com/in/miguelmartinsioco/"><i class="fa fa-linkedin"></i></a></li>
+		                	</ul>
+		                	<br>
+		            	</div>
+	        	</div>
+	    	</div>
+	    </div>
+</footer>
+
+	
+
+	<!-- CLOSE FOOTER -->
+
+</body>
+</html>

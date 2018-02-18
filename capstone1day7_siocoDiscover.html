@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport", content="device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+	<link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+
+	<title>Discover - MarahuyoGuides</title>
+
+	<style>
+
+	/* -- UNIVERSAL STYLING -- */
+
+	* {
+		box-sizing: border-box;
+		margin: 0px;
+	}
+
+	/* -- BEGIN GENERAL TEXT STYLING -- */
+
+	body {
+		padding-top:60px;
+	}
+
+	h1 {
+		font-family: 'Oswald', sans-serif;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-family:'Lato', sans-serif;
+	}
+
+	p {
+		font-family:'Lato', sans-serif;
+		font-weight: lighter;
+	}
+
+	a {
+		font-family:'Lato', sans-serif;
+	}
+
+	.btn {
+		color: #FFFFFF;
+		background-color: #0B111E;
+		border: 1px solid white;
+	}
+
+	.btn:hover {
+		color: #8B9DC3;
+	}
+
+	/* -- END GENERAL TEXT STYLING -- */
+
+	/* -- BEGIN NAVBAR STYLING -- */
+
+	.navbar-brand {
+		color: #0B111E;
+		font-family:'Oswald', sans-serif;
+		font-weight: bold;
+		font-size: 25px;
+	}
+
+
+	.navbar {
+		background-color: #0B111E;
+	}
+
+	/* -- END NAVBAR STYLING -- */
+
+/* -- BEGIN BODY SECTION STYLING -- */
+
+	.abouttext {
+		padding: 15px;
+	}
+
+	.imagebox {
+	  background: black;
+	  padding: 0px;
+	  margin: 5px;
+	  position: relative;
+	  text-align: center;
+	  width: 100%;
+	}
+
+	.imagebox img {
+	  opacity: 1;
+	  transition: 0.5s opacity;
+	}
+
+	.imagebox .imagebox-desc {
+	  background-color: rgba(0, 0, 0, 0.6);
+	  bottom: 0px;
+	  color: white;
+	  font-size: 1.2em;
+	  left: 0px;
+	  padding: 10px 15px;
+	  position: absolute;
+	  transition: 0.5s padding;
+	  text-align: center;
+	  width: 100%;
+	  font-family:'Oswald', sans-serif;
+	}
+
+	.imagebox:hover img {
+	  opacity: 0.7;
+	}
+
+	.imagebox:hover .imagebox-desc {
+	  padding-bottom: 10%;
+	  border: 2px solid white;
+	  color: orange;
+	  background-color: #0B111E;
+	}
+
+	/* -- END STYLING OF ABOUT SECTION -- */
+
+		/* -- BEGIN STYLING OF FOOTER -- */
+
+	footer {
+		background-color: #0B111E;
+		padding-bottom:5px;
+	}
+
+	.social li {
+		background: none repeat scroll 0 0 #3B5998;
+		border: 2px solid #B5B5B5;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		border-radius: 50%;
+		float: left;
+		height: 36px;
+		line-height: 36px;
+		margin: 0 8px 0 0;
+		padding: 0;
+		text-align: center;
+		width: 36px;
+		transition: all 0.5s ease 0s;
+		-moz-transition: all 0.5s ease 0s;
+		-webkit-transition: all 0.5s ease 0s;
+		-ms-transition: all 0.5s ease 0s;
+		-o-transition: all 0.5s ease 0s;
+	}
+
+	.social li:hover {
+		transform: scale(1.15) rotate(360deg);
+		-webkit-transform: scale(1.1) rotate(360deg);
+		-moz-transform: scale(1.1) rotate(360deg);
+		-ms-transform: scale(1.1) rotate(360deg);
+		-o-transform: scale(1.1) rotate(360deg);
+	}
+
+	.social li a {
+		color: #EDEFF1;
+	}
+
+	.social li:hover {
+		border: 2px solid #2c3e50;
+		background: #0B111E;
+	}
+
+	.social li a i {
+		font-size: 16px;
+		margin: 0 0 0 5px;
+		color: #FFFFFF !important;
+	}
+
+	/* -- END STYLING OF FOOTER -- */
+
+		/* -- BEGIN STYLING OF MODAL CONTENT -- */
+
+	#adimg1, #adimg2, #adimg3 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+	}
+
+	#adimg1:hover {
+		opacity: 0.7;
+		background-color: #0B111E;
+	}
+
+	#adimg2:hover {
+		opacity: 0.7;
+		background-color: #0B111E;
+	}
+
+	#adimg3:hover {
+		opacity: 0.7;
+		background-color: #0B111E;
+	}
+
+	/* The Modal (background) */
+	.modal {
+	    display: none; 
+	    position: fixed; 
+	    z-index: 1; 
+	    padding-top: 100px; 
+	    left: 0;
+	    top: 0;
+	    width: 100%; 
+	    height: 100%; 
+	    overflow: auto; 
+	    background-color: rgb(0,0,0); 
+	    background-color: rgba(0,0,0,0.9); 
+	}
+
+	/* Modal Content (image) */
+	.modal-content {
+	    margin: auto;
+	    display: block;
+	    width: 80%;
+	    max-width: 700px;
+	}
+
+	/* Caption of Modal Image */
+	#caption {
+	    margin: auto;
+	    display: block;
+	    width: 80%;
+	    max-width: 700px;
+	    text-align: center;
+	    color: #ccc;
+	    padding: 10px 0;
+	    height: 150px;
+	}
+
+	/* Add Animation */
+	.modal-content, #caption {    
+	    -webkit-animation-name: zoom;
+	    -webkit-animation-duration: 0.6s;
+	    animation-name: zoom;
+	    animation-duration: 0.6s;
+	}
+
+	@-webkit-keyframes zoom {
+	    from {-webkit-transform:scale(0)} 
+	    to {-webkit-transform:scale(1)}
+	}
+
+	@keyframes zoom {
+	    from {transform:scale(0)} 
+	    to {transform:scale(1)}
+	}
+
+	/* The Close Button */
+	.close {
+	    position: absolute;
+	    top: 55px;
+	    right: 50px;
+	    color: #ffffff;
+	    font-size: 80px;
+	    font-weight: bold;
+	    transition: 0.3s;
+	}
+
+	.close:hover,
+	.close:focus {
+	    color: #ffffff;
+	    text-decoration: none;
+	    cursor: pointer;
+	}
+
+	/* 100% Image Width on Smaller Screens */
+	@media only screen and (max-width: 700px){
+	.modal-content {
+	    width: 100%;
+	 }
+
+	 /* -- END STYLING OF MODAL CONTENT -- */
+
+	
+
+
+
+	</style>
+
+</head>
+<body>
+
+		<!-- BEGIN JAVASCRIPT -->
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+
+	<!-- END OF JAVASCRIPT -->
+
+	<!-- BEGIN NAVBAR HEADER -->
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="capstone1day7_sioco.html" style="color:#FFFFFF">MarahuyoGuides</a>
+				</div> <!--THIS DIV IS THE WHOLE NAVBAR HEADER -->
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="capstone1day7_sioco.html" style="color:#FFFFFF">Home</a></li> <!--THESE ARE THE LINK BUTTONS -->
+						<li><a href="capstone1day7_siocoAbout.html" style="color:#FFFFFF">About</a></li>
+						<li class="active"><a href="capstone1day7_siocoDiscover.html">Discover</a></li>
+						<li class="dropdown">
+								<a href="capstone1day7_siocoDiscover.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoKaizen.html">Kaizen</a></li>
+									<li><a href="capstone1day7_siocoOmotenashi.html">Omotenashi</a></li>
+									<li><a href="capstone1day7_siocoKodawari.html">Kodawari</a></li>
+								</ul>
+						</li>
+						<li><a href="capstone1day7_siocoExperience.html" style="color:#FFFFFF">Experience</a></li>
+						<li class="dropdown">
+								<a href="capstone1day7_siocoExperience.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoIkebana.html">Ikebana</a></li>
+									<li><a href="capstone1day7_siocoKendo.html">Kendo</a></li>
+									<li><a href="capstone1day7_siocoArchery.html">Kyudo</a></li>
+									<li><a href="capstone1day7_siocoRyokan.html">Ryokan</a></li>
+									<li><a href="capstone1day7_siocoKaiseki.html">Kaiseki</a></li>
+									<li><a href="capstone1day7_siocoShinkansen.html">Shinkansen</a></li>
+									<li><a href="capstone1day7_siocoMochi.html">Mochi</a></li>
+									<li><a href="capstone1day7_siocoSushi.html">Sushi</a></li>
+								</ul>
+							</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+<!-- END NAVBAR DEFAULT or SITE HEADER-->
+
+<!-- BEGIN BODY -->
+
+<!-- BEGIN TOP STORIES SECTION -->
+
+		<div class="container">
+		  <div class="row">
+		  <h1 style="text-align: center">Choose Your Story</h1>
+		  <hr class="grey">
+		  <br>
+		  <br>
+		    <div class="col-sm-4">
+		      <div class="imagebox">
+		        <a href="capstone1day7_siocoKaizen.html">
+		          <img src="diskai.jpeg"  class="category-banner img-responsive">
+		          <span class="imagebox-desc">Discover Kaizen</span>
+		        </a>
+		      </div>
+		    </div>
+		    
+		    <div class="col-sm-4">
+		      <div class="imagebox">
+		        <a href="capstone1day7_siocoOmotenashi.html">
+		          <img src="disome.jpeg"  class="category-banner img-responsive">
+		          <span class="imagebox-desc">Discover Omotenashi</span>
+		        </a>
+		      </div>
+		    </div>
+		    
+		    <div class="col-sm-4">
+		      <div class="imagebox">
+		        <a href="capstone1day7_siocoKodawari.html">
+		          <img src="diskoda.jpeg"  class="category-banner img-responsive">
+		          <span class="imagebox-desc">Discover Kodawari</span>
+		        </a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+<!-- END TOP STORIES SECTION -->
+
+<!-- BEGIN DISCOVER ABOUT SECTION -->
+	<br>
+	<br>
+	<hr class="grey">
+	<div class="container">
+		<div class="row">
+				<div class="col-md-8 abouttext">
+					<h1 style="text-align:center">DISCOVER JAPAN</h1>
+						<br>
+					<p style="text-align:justify">On the surface, Japan appears exceedingly modern, but travelling around it offers numerous opportunities to connect with the country's traditional culture. Spend the night in a ryokan (traditional Japanese inn), sleeping on futons and tatami mats, and padding through well-worn wooden halls to the bathhouse (or go one step further and sleep in an old farmhouse). Chant with monks or learn how to whisk bitter matcha (powdered green tea) into a froth. From the splendour of a Kyoto geisha dance to the spare beauty of a Zen rock garden, Japan has the power to enthral even the most jaded traveller.</p>
+
+					<p style="text-align: justify;">Wherever you are in Japan, it seems, you're never more than 500m from a great meal. Restaurants often specialise in just one dish – perhaps having spent generations perfecting it – and pay close attention to every stage, from sourcing the freshest, local ingredients to assembling the dish attractively. Moreover, you don't have to travel far to discover that Japanese cuisine is deeply varied. The hearty hotpots of the mountains are, for example, dramatically different from the delicate sushi for which the coast is famous. It's also intensely seasonal, meaning you can visit again at a different time of year and experience totally new tastes.</p>
+					<br>
+					<small>Sourced from: Lonely Planet/Japan.</small>
+
+					<br>
+					<h2 style="text-align:center">HISTORY</h2>
+					<p style="text-align:justify">Japan likely was settled about 35,000 years ago by Paleolithic people from the Asian mainland. At the end of the last Ice Age, about 10,000 years ago, a culture called the Jomon developed. Jomon hunter-gatherers fashioned fur clothing, wooden houses, and elaborate clay vessels. According to DNA analysis, the Ainu people may be descendants of the Jomon. The second wave of settlement, around 400 B.C., by the Yayoi people, introduced metal-working, rice cultivation, and weaving to Japan. DNA evidence suggests that these settlers came from Korea.</p>
+
+					<p style="text-align:justify;">The first era of recorded history in Japan is the Kofun (250-538 A.D.), characterized by large burial mounds or tumuli. The Kofun were headed by a class of aristocratic warlords; they adopted many Chinese customs and innovations. Buddhism came to Japan during the Asuka Period, 538-710, as did the Chinese writing system. Society was divided into clans, ruled from Yamato Province.  The first strong central government developed in Nara (710-794); the aristocratic class practiced Buddhism and Chinese calligraphy, while agricultural villagers followed Shintoism.</p>
+
+					Japan's unique culture developed rapidly in the Heian era, 794-1185. The imperial court turned out enduring art, poetry, and prose. The samurai warrior class developed at this time, as well. Samurai lords, called "shogun," took over governmental power in 1185, and ruled Japan in the name of the emperor until 1868. The Kamakura Shogunate (1185-1333) ruled much of Japan from Kyoto. Aided by two miraculous typhoons, the Kamakura repelled attacks by Mongol armadas in 1274 and 1281.</p>
+
+					<p style="text-align: justify;">In 1868, a new constitutional monarchy was established, headed by the Meiji Emperor. The power of the shoguns was broken. After the Meiji Emperor's death, his son became the Taisho Emperor (r. 1912-1926). His chronic illnesses allowed the Diet of Japan to democratize the country further. Japan formalized its rule over Korea and seized northern China during World War I. The Showa Emperor, Hirohito, (r. 1926-1989) oversaw Japan's aggressive expansion during World War II, its surrender, and its rebirth as a modern, industrialized nation.</p>
+
+					<small>Sourced from: Thoughtco.com/Japanfacts -- Szczepanski, Kallie. "Japan | Facts and History." ThoughtCo, Jun. 13, 2017, thoughtco.com/japan-facts-and-history-195581.</small>
+				</div>
+
+				 <div class="col-md-4 ads">
+					<img id="adimg1" class="adimg img-responsive" src="kaizen1.jpg" alt="The Philosophy of change, Kaizen. It is embodied by a linear staircase. Each step, a challenge. Each challenge, growth." style="text-align: center">
+
+					<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					</div>
+
+					<br>
+
+					<img id="adimg2" class="adimg img-responsive" src="omotenashi2.jpg" alt="Tea Ceremony is the origin of the value of Omotenashi. The meticulous assembly and execution of the ceremony gave birth to a culture's identity." style="text-align: center">
+
+					<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					</div>
+
+					<br>
+
+					<img id="adimg3" class="adimg img-responsive" src="omotenashi1.jpg" alt="Maikos are Geishas in training. Captured in this image is a young Maiko. Fully devoted to the art of Geishas. These individuals are representative of Kodawari." style="text-align: center">
+
+					<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					</div>
+
+				</div>
+		</div>
+	</div>
+
+<!-- END DISCOVER ABOUT SECTION -->
+
+
+<!-- BEGIN FOOTER -->
+<footer>
+	<hr class="grey">
+	    <div class="footer navbar-bottom" id="footer">	        
+	        <div class="container">
+	        	<div class="row">
+		           <p class="pull-left" style="color:#ffffff"> Copyright &copy Miguel Martin Sioco 2018. <bold>MarahuyoGuides</bold>.</p>
+		            	<div class="pull-right">
+		                	<ul class="social">
+			                    <li><a href="https://www.facebook.com/miguelmartin.sioco"><i class="fa fa-facebook"></i></a></li>
+			                    <li> <a href="https://www.instagram.com/miguelsioco/"><i class="fa fa-instagram"></i></a></li>
+			                    <li> <a href="https://www.linkedin.com/in/miguelmartinsioco/"><i class="fa fa-linkedin"></i></a></li>
+		                	</ul>
+		                	<br>
+		            	</div>
+	        	</div>
+	    	</div>
+	    </div>
+</footer>
+
+	<!-- CLOSE FOOTER -->
+
+<script>
+
+	// Get the modal
+	var modal = document.getElementById('myModal');
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById('adimg1');
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+	    modal.style.display = "block";
+	    modalImg.src = this.src;
+	    captionText.innerHTML = this.alt;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	    modal.style.display = "none";
+	}
+
+	// CLOSE 1ST IMAGE MODAL
+
+	var modal = document.getElementById('myModal');
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById('adimg2');
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+	    modal.style.display = "block";
+	    modalImg.src = this.src;
+	    captionText.innerHTML = this.alt;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	    modal.style.display = "none";
+	}
+
+	// CLOSE 2ND IMAGE MODAL
+
+	var modal = document.getElementById('myModal');
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById('adimg3');
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+	    modal.style.display = "block";
+	    modalImg.src = this.src;
+	    captionText.innerHTML = this.alt;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	    modal.style.display = "none";
+	}
+
+	// CLOSE 3RD IMAGE MODAL
+
+</script>
+
+</body>
+</html>

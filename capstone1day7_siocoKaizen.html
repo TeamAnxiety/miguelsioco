@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport", content="device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+	<link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+
+	<title>Kaizen - MarahuyoGuides</title>
+
+	<style>
+
+	/* -- UNIVERSAL STYLING -- */
+
+	* {
+		box-sizing: border-box;
+		margin: 0px;
+	}
+
+	/* -- BEGIN GENERAL TEXT STYLING -- */
+
+	body {
+		padding-top:50px;
+	}
+
+	h1 {
+		font-family: 'Oswald', sans-serif;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-family:'Lato', sans-serif;
+	}
+
+	p {
+		font-family:'Lato', sans-serif;
+		font-weight: lighter;
+	}
+
+	a {
+		font-family:'Lato', sans-serif;
+	}
+
+	.btn {
+		color: #FFFFFF;
+		background-color: #0B111E;
+		border: 1px solid white;
+	}
+
+	.btn:hover {
+		color: #8B9DC3;
+	}
+
+	/* -- END GENERAL TEXT STYLING -- */
+
+	/* -- BEGIN NAVBAR STYLING -- */
+
+	.navbar-brand {
+		color: #0B111E;
+		font-family:'Oswald', sans-serif;
+		font-weight: bold;
+		font-size: 25px;
+	}
+
+	.navbar {
+		background-color: #0B111E;
+	}
+
+	/* -- END NAVBAR STYLING -- */
+
+/* -- BEGIN BODY SECTION STYLING -- */
+
+	.landingimg {
+		height:100%;
+		width: 100%;
+		transition: .5s ease; /*added */
+  		backface-visibility: hidden;
+  		opacity: 1;
+  		display: inline-block; /*end added*/
+	}
+
+	.abouttext {
+		padding: 15px;
+	}
+
+	.about {
+		padding:20px;
+	}
+
+	.expimg {
+		border-radius: 10px;
+	}
+
+	/* -- END STYLING OF ABOUT SECTION -- */
+
+		/* -- BEGIN STYLING OF FOOTER -- */
+
+	footer {
+		background-color: #0B111E;
+		padding-bottom:5px;
+	}
+
+	.social li {
+		background: none repeat scroll 0 0 #3B5998;
+		border: 2px solid #B5B5B5;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		border-radius: 50%;
+		float: left;
+		height: 36px;
+		line-height: 36px;
+		margin: 0 8px 0 0;
+		padding: 0;
+		text-align: center;
+		width: 36px;
+		transition: all 0.5s ease 0s;
+		-moz-transition: all 0.5s ease 0s;
+		-webkit-transition: all 0.5s ease 0s;
+		-ms-transition: all 0.5s ease 0s;
+		-o-transition: all 0.5s ease 0s;
+	}
+
+	.social li:hover {
+		transform: scale(1.15) rotate(360deg);
+		-webkit-transform: scale(1.1) rotate(360deg);
+		-moz-transform: scale(1.1) rotate(360deg);
+		-ms-transform: scale(1.1) rotate(360deg);
+		-o-transform: scale(1.1) rotate(360deg);
+	}
+
+	.social li a {
+		color: #EDEFF1;
+	}
+
+	.social li:hover {
+		border: 2px solid #2c3e50;
+		background: #0B111E;
+	}
+
+	.social li a i {
+		font-size: 16px;
+		margin: 0 0 0 5px;
+		color: #FFFFFF !important;
+	}
+
+	/* -- END STYLING OF FOOTER -- */
+
+
+	</style>
+
+</head>
+<body>
+
+	<!-- BEGIN JAVASCRIPT -->
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+
+	<!-- END OF JAVASCRIPT -->
+
+	<!-- BEGIN NAVBAR HEADER -->
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="capstone1day7_sioco.html" style="color:#FFFFFF">MarahuyoGuides</a>
+				</div> <!--THIS DIV IS THE WHOLE NAVBAR HEADER -->
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="capstone1day7_sioco.html" style="color:#FFFFFF">Home</a></li> <!--THESE ARE THE LINK BUTTONS -->
+						<li><a href="capstone1day7_siocoAbout.html" style="color:#FFFFFF">About</a></li>
+						<li class="active"><a href="capstone1day7_siocoDiscover.html">Discover</a></li>
+						<li class="dropdown">
+								<a href="capstone1day7_siocoDiscover.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoKaizen.html">Kaizen</a></li>
+									<li><a href="capstone1day7_siocoOmotenashi.html">Omotenashi</a></li>
+									<li><a href="capstone1day7_siocoKodawari.html">Kodawari</a></li>
+								</ul>
+						</li>
+						<li><a href="capstone1day7_siocoExperience.html" style="color:#FFFFFF">Experience</a></li>
+						<li class="dropdown">
+								<a href="capstone1day7_siocoExperience.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoIkebana.html">Ikebana</a></li>
+									<li><a href="capstone1day7_siocoKendo.html">Kendo</a></li>
+									<li><a href="capstone1day7_siocoArchery.html">Kyudo</a></li>
+									<li><a href="capstone1day7_siocoRyokan.html">Ryokan</a></li>
+									<li><a href="capstone1day7_siocoKaiseki.html">Kaiseki</a></li>
+									<li><a href="capstone1day7_siocoShinkansen.html">Shinkansen</a></li>
+									<li><a href="capstone1day7_siocoMochi.html">Mochi</a></li>
+									<li><a href="capstone1day7_siocoSushi.html">Sushi</a></li>
+								</ul>
+							</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+<!-- END NAVBAR DEFAULT or SITE HEADER-->
+
+<!-- BEGIN BODY -->
+
+<!-- BEGIN SECTION ABOUT LANDING -->
+	
+	<div class="container-fluid">
+		<div class="row">
+			<img class="landingimg img-responsive" src="experience3.jpg">
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+				<div class="abouttext">
+					<h1 style="text-align:center">DISCOVER</h1>
+						<br>
+					<p style="text-align:justify">Kaizen (改善), is the Japanese word for "improvement". In business, kaizen refers to activities that continuously improve all functions and involve all employees from the CEO to the assembly line workers. It also applies to processes, such as purchasing and logistics, that cross organizational boundaries into the supply chain. It has been applied in healthcare, psychotherapy, life-coaching, government, banking, and other industries. By improving standardized programmes and processes, kaizen aims to eliminate waste. Kaizen was first practiced in Japanese businesses after the Second World War, influenced in part by American business and quality-management teachers, and most notably as part of The Toyota Way. It has since spread throughout the world and has been applied to environments outside business and productivity.</p>
+
+					<p style="text-align:justify">The Japanese word kaizen simply means "change for better", with inherent meaning of either "continuous" or "philosophy" in Japanese dictionaries and in everyday use. The word refers to any improvement, one-time or continuous, large or small, in the same sense as the English word "improvement". While the word is generally adapted to business processes, it has also spread out beyond corporate applications, specifically in the way of life. Generally, the idea is, small improvements made consistently over time, will yield great results. We have to constantly question the current context and see if there is any other better way of doing things, as mentioned prior, to reduce waste. This waste could refer to material waste, time wasted, and others. The overall goal is to achieve a literal and figurative cleansing of daily operations whethere these operations relate to life overall or to a business.</p>
+
+					<small>Sourced from: Wikipedia Commons. --- Image Created from: Canva</small>
+				</div>
+		</div>
+	</div>
+
+<!-- END SECTION ABOUT LANDING -->
+
+<!-- BEGIN SECTION ABOUT -->
+
+	<br>
+	<hr class="grey">
+	<br>
+	<h1 style="text-align: center">EXPERIENCE</h1>
+	<br>
+	<br>
+	<div class="container about">
+		<div class="row">
+			<div class="col-sm-6 col-md-6">
+				<img class="expimg img-responsive" src="ikebanacollage.jpg" alt="..."><small>Image is sourced from: Google Images.</small></div>
+			<div class="col-sm-6 col-md-6">
+				<h2>Ikebana<small> /.workshop</small></h2>
+				<p style="text-align: justify;">In the context of Kaizen, Ikebana is at home to the philosophy of change. When we arrange simple things like flowers, we don't realize that each change can either be dramatic or minute, but the result will always be a translation of beauty. In Ikebana, the element of space in between is not awkward, just as silence in Japanese culture is not looked down upon. It's the footnotes in between that accentuate the whole experience, thereby promoting the concept of minute changes leading to a bigger impact to the canvas.</p>
+			    <p><a href="capstone1day7_siocoIkebana.html" class="btn" role="button">Learn More</a></p>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="container about">
+		<div class="row">
+			<div class="col-sm-6 col-md-6">
+				<img class="expimg img-responsive" src="learnkendo.jpg" alt="..."><small>Image is sourced from: Google Images.</small></div>
+			 <div class="col-sm-6 col-md-6">
+			    <h2>Kendo<small> /.sport</small></h2>
+			    <p style="text-align: justify;">The way of the sword as Kendo is traditionally referred to, is based also in the concept of Kaizen's continuous change philosophy. To be at home with small incremental improvements done consistently, will reap benefits in the future. Kind of like the Karate Kid's wash off, wash on practice. Although it may seem arbitrary at first, it's minute actions lead to a bigger change in the overall form. Kendo doesn't just require focus and determination, it most importantly needs commitment from the practicioner. To be able to exert extreme patience to accept small changes as a means of improvement is something not to take for granted as a skill and a character trait.</p>
+			    <p><a href="capstone1day7_siocoKendo.html" class="btn" role="button">Learn More</a></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container about">
+		<div class="row">
+			<div class="col-sm-6 col-md-6">
+				<img class="expimg img-responsive" src="archery.jpg" alt="..."><small>Image is sourced from: Google Images.</small></div>
+			 <div class="col-sm-6 col-md-6">
+			    <h2>Kyūdō<small> /.sport</small></h2>
+			    <p style="text-align: justify;">The Japanese form of Archery. Similarly to the way of the sword, Kyudo requires it's practicioners to be fully aware and patient in the present. It's not a sport that anyone can pick up and be extremely skilled at from the get go, this sport similar to Kendo, takes a lot of time to get comfortable with. Something that Kaizen requires as well.</p>
+			    <p><a href="capstone1day7_siocoArchery.html" class="btn" role="button">Learn More</a></p>
+			</div>
+		</div>
+	</div>
+
+<!-- END SECTION ABOUT -->
+
+
+<!-- BEGIN FOOTER -->
+<footer>
+	<hr class="grey">
+	    <div class="footer navbar-bottom" id="footer">	        
+	        <div class="container">
+	        	<div class="row">
+		           <p class="pull-left" style="color:#ffffff"> Copyright &copy Miguel Martin Sioco 2018. <bold>MarahuyoGuides</bold>.</p>
+		            	<div class="pull-right">
+		                	<ul class="social">
+			                   <li><a href="https://www.facebook.com/miguelmartin.sioco"><i class="fa fa-facebook"></i></a></li>
+			                    <li> <a href="https://www.instagram.com/miguelsioco/"><i class="fa fa-instagram"></i></a></li>
+			                    <li> <a href="https://www.linkedin.com/in/miguelmartinsioco/"><i class="fa fa-linkedin"></i></a></li>
+		                	</ul>
+		                	<br>
+		            	</div>
+	        	</div>
+	    	</div>
+	    </div>
+</footer>
+
+	<!-- CLOSE FOOTER -->
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport", content="device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+	<link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+
+	<title>Shinkansen - MarahuyoGuides</title>
+
+	<style>
+
+	/* -- UNIVERSAL STYLING -- */
+
+	* {
+		box-sizing: border-box;
+		margin: 0px;
+	}
+
+	/* -- BEGIN GENERAL TEXT STYLING -- */
+
+	body {
+		padding-top:50px;
+	}
+
+	h1 {
+		font-family: 'Oswald', sans-serif;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-family:'Lato', sans-serif;
+	}
+
+	h3 {
+		font-family:'Lato', sans-serif;
+	}
+
+	p {
+		font-family:'Lato', sans-serif;
+		font-weight: lighter;
+	}
+
+	a {
+		font-family:'Lato', sans-serif;
+	}
+
+	.btn {
+		color: #FFFFFF;
+		background-color: #0B111E;
+		border: 1px solid white;
+	}
+
+	.btn:hover {
+		color: #8B9DC3;
+	}
+
+		/* -- END GENERAL TEXT STYLING -- */
+
+	/* -- BEGIN NAVBAR STYLING -- */
+
+	.navbar-brand {
+		color: #0B111E;
+		font-family:'Oswald', sans-serif;
+		font-weight: bold;
+		font-size: 25px;
+	}
+
+	.navbar {
+		background-color: #0B111E;
+	}
+
+/* -- END NAVBAR STYLING -- */
+
+/* -- BEGIN BODY SECTION STYLING -- */
+
+	.landingimg {
+		height:100%;
+		width: 100%;
+		transition: .5s ease; /*added */
+  		backface-visibility: hidden;
+  		opacity: 1;
+  		display: inline-block; /*end added*/
+	}
+
+	.abouttext {
+		padding: 15px;
+	}
+
+	.about {
+		padding:20px;
+	}
+
+	.expimg {
+		border-radius: 10px;
+	}
+
+/* -- END STYLING OF ABOUT SECTION -- */
+
+/* -- BEGIN STYLING OF FOOTER -- */
+
+	footer {
+		background-color: #0B111E;
+		padding-bottom:5px;
+	}
+
+	.social li {
+		background: none repeat scroll 0 0 #3B5998;
+		border: 2px solid #B5B5B5;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		border-radius: 50%;
+		float: left;
+		height: 36px;
+		line-height: 36px;
+		margin: 0 8px 0 0;
+		padding: 0;
+		text-align: center;
+		width: 36px;
+		transition: all 0.5s ease 0s;
+		-moz-transition: all 0.5s ease 0s;
+		-webkit-transition: all 0.5s ease 0s;
+		-ms-transition: all 0.5s ease 0s;
+		-o-transition: all 0.5s ease 0s;
+	}
+
+	.social li:hover {
+		transform: scale(1.15) rotate(360deg);
+		-webkit-transform: scale(1.1) rotate(360deg);
+		-moz-transform: scale(1.1) rotate(360deg);
+		-ms-transform: scale(1.1) rotate(360deg);
+		-o-transform: scale(1.1) rotate(360deg);
+	}
+
+	.social li a {
+		color: #EDEFF1;
+	}
+
+	.social li:hover {
+		border: 2px solid #2c3e50;
+		background: #0B111E;
+	}
+
+	.social li a i {
+		font-size: 16px;
+		margin: 0 0 0 5px;
+		color: #FFFFFF !important;
+	}
+
+	/* -- END STYLING OF FOOTER -- */
+
+	</style>
+
+</head>
+<body>
+
+	<!-- BEGIN NAVBAR HEADER -->
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="capstone1day7_sioco.html" style="color:#FFFFFF">MarahuyoGuides</a>
+				</div> <!--THIS DIV IS THE WHOLE NAVBAR HEADER -->
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="capstone1day7_sioco.html" style="color:#FFFFFF">Home</a></li> <!--THESE ARE THE LINK BUTTONS -->
+						<li><a href="capstone1day7_siocoAbout.html" style="color:#FFFFFF">About</a></li>
+						<li><a href="capstone1day7_siocoDiscover.html" style="color:#FFFFFF">Discover</a></li>
+						<li class="dropdown">
+								<a href="capstone1day7_siocoDiscover.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoKaizen.html">Kaizen</a></li>
+									<li><a href="capstone1day7_siocoOmotenashi.html">Omotenashi</a></li>
+									<li><a href="capstone1day7_siocoKodawari.html">Kodawari</a></li>
+								</ul>
+						</li>
+						<li class="active"><a href="capstone1day7_siocoExperience.html">Experience</a></li>
+						<li class="dropdown">
+								<a href="capstone1day7_siocoExperience.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoIkebana.html">Ikebana</a></li>
+									<li><a href="capstone1day7_siocoKendo.html">Kendo</a></li>
+									<li><a href="capstone1day7_siocoArchery.html">Kyudo</a></li>
+									<li><a href="capstone1day7_siocoRyokan.html">Ryokan</a></li>
+									<li><a href="capstone1day7_siocoKaiseki.html">Kaiseki</a></li>
+									<li><a href="capstone1day7_siocoShinkansen.html">Shinkansen</a></li>
+									<li><a href="capstone1day7_siocoMochi.html">Mochi</a></li>
+									<li><a href="capstone1day7_siocoSushi.html">Sushi</a></li>
+								</ul>
+							</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+<!-- END NAVBAR DEFAULT or SITE HEADER-->
+
+<!-- BEGIN BODY -->
+
+<!-- BEGIN SECTION ABOUT LANDING -->
+	
+	<div class="container-fluid">
+		<div class="row">
+			<img class="landingimg img-responsive" src="shinkansen.png">
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+				<div class="abouttext">
+					<h1 style="text-align:center">HISTORY</h1>
+						<br>
+					<p style="text-align:justify">The Shinkansen (新幹線, new trunk line), colloquially known in English as the bullet train, is a network of high-speed railway lines in Japan operated by five Japan Railways Group companies. Starting with the Tōkaidō Shinkansen (515.4 km, 320.3 mi) in 1964, the network has expanded to currently consist of 2,764.6 km (1,717.8 mi) of lines with maximum speeds of 240–320 km/h (150–200 mph), 283.5 km (176.2 mi) of Mini-shinkansen lines with a maximum speed of 130 km/h (80 mph), and 10.3 km (6.4 mi) of spur lines with Shinkansen services. The network presently links most major cities on the islands of Honshu and Kyushu, and Hakodate on northern island of Hokkaido, with an extension to Sapporo under construction and scheduled to commence in March 2031. The maximum operating speed is 320 km/h (200 mph) (on a 387.5 km section of the Tōhoku Shinkansen). Test runs have reached 443 km/h (275 mph) for conventional rail in 1996, and up to a world record 603 km/h (375 mph) for maglev trains in April 2015. Shinkansen literally means new trunk line, referring to the high-speed rail line network. The name Superexpress (超特急 chō-tokkyū), initially used for Hikari trains, was retired in 1972 but is still used in English-language announcements and signage.</p>
+
+					<p style="text-align:justify">The Shinkansen is very reliable thanks to several factors, including its near-total separation from slower traffic. In 2014, JR Central reported that the Shinkansen's average delay from schedule per train was 54 seconds. This includes delays due to uncontrollable causes, such as natural disasters. The record, in 1997, was 18 seconds. Over the Shinkansen's 50-plus year history, carrying over 10 billion passengers, there have been no passenger fatalities due to derailments or collisions, despite frequent earthquakes and typhoons.</p>
+
+					<small>Sourced from: Wikipedia Commons ---- Image Created from: Canva</small>
+				</div>
+		</div>
+	</div>
+
+<!-- END SECTION ABOUT LANDING -->
+
+<!-- BEGIN SECTION ABOUT -->
+
+	<br>
+	<hr class="grey">
+	<br>
+	<h1 style="text-align: center">WHERE TO GO</h1>
+	<br>
+	<br>
+	<div class="container">
+		<div class="row">
+			 <div class="col-sm-6 col-md-6">
+				<img class="expimg img-responsive" src="shinkansen2.jpg" alt="..."><small>Image Sourced from: Google Images</small></div>
+			<div class="col-sm-6 col-md-6" style="text-align: justify;">
+
+				<h2><a href="https://www.japan-guide.com/e/e2018.html">Shinkansen</a></h2>
+
+				<p style="font-weight: bold">Varying Locations - Stations with "Shin"</p>
+
+				<p>The legendary Japanese bullet trains, famous for being ultra-punctual and perpetually efficient. If you ever need to find proof of the Japanese character and their value for service, look no further than the operations of the Shinkansen.</p>
+
+				<p>Expect punctuality to the dot, if a train is supposed to arrive at 8:01AM, you'll see the train settle at the station at 7:59AM. For the record, trains in Japan are almost never late. On average, the longest delays are only late by 36 seconds. Want more unbelievable facts? There have been zero accidents or incidents in the Shinkansen operations to date. ZERO.</p>
+
+				<p>Oh, did we skip the fact that these bullet trains reach blazing fast speeds? We're talking about 200 miles per hour.</p>
+
+			    <p><a href="https://www.google.com/maps/place/SHIN-YOKOHAMA+STATION/@35.5068127,139.615388,17z/data=!3m1!4b1!4m5!3m4!1s0x60185ed02e389b43:0xdab81661ffb6a63b!8m2!3d35.5068084!4d139.6175767" class="btn btn-block" role="button">Locate</a></p>
+			</div>
+		</div>
+	</div>
+
+<!-- END SECTION ABOUT -->
+
+<!-- BEGIN JAVASCRIPT -->
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- END OF JAVASCRIPT -->
+
+
+<!-- BEGIN FOOTER -->
+<footer>
+	<hr class="grey">
+	    <div class="footer navbar-bottom" id="footer">	        
+	        <div class="container">
+	        	<div class="row">
+		           <p class="pull-left" style="color:#ffffff"> Copyright &copy Miguel Martin Sioco 2018. <bold>MarahuyoGuides</bold>.</p>
+		            	<div class="pull-right">
+		                	<ul class="social">
+			                   <li><a href="https://www.facebook.com/miguelmartin.sioco"><i class="fa fa-facebook"></i></a></li>
+			                    <li> <a href="https://www.instagram.com/miguelsioco/"><i class="fa fa-instagram"></i></a></li>
+			                    <li> <a href="https://www.linkedin.com/in/miguelmartinsioco/"><i class="fa fa-linkedin"></i></a></li>
+		                	</ul>
+		                	<br>
+		            	</div>
+	        	</div>
+	    	</div>
+	    </div>
+</footer>
+
+	
+
+	<!-- CLOSE FOOTER -->
+
+</body>
+</html>

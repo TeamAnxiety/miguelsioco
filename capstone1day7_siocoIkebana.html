@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport", content="device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+	<link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+
+	<title>Ikebana - MarahuyoGuides</title>
+
+	<style>
+
+	/* -- UNIVERSAL STYLING -- */
+
+	* {
+		box-sizing: border-box;
+		margin: 0px;
+	}
+
+	/* -- BEGIN GENERAL TEXT STYLING -- */
+
+	body {
+		padding-top:50px;
+	}
+
+	h1 {
+		font-family: 'Oswald', sans-serif;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-family:'Lato', sans-serif;
+	}
+
+	h3 {
+		font-family:'Lato', sans-serif;
+	}
+
+	p {
+		font-family:'Lato', sans-serif;
+		font-weight: lighter;
+
+	}
+
+	a {
+		font-family:'Lato', sans-serif;
+	}
+
+	.btn {
+		color: #FFFFFF;
+		background-color: #0B111E;
+		border: 1px solid white;
+	}
+
+	.btn:hover {
+		color: #8B9DC3;
+	}
+
+	/* -- END GENERAL TEXT STYLING -- */
+
+	/* -- BEGIN NAVBAR STYLING -- */
+
+	.navbar-brand {
+		color: #0B111E;
+		font-family:'Oswald', sans-serif;
+		font-weight: bold;
+		font-size: 25px;
+	}
+
+	.navbar {
+		background-color: #0B111E;
+	}
+
+		/* -- END NAVBAR STYLING -- */
+
+/* -- BEGIN BODY SECTION STYLING -- */
+
+
+	.landingimg {
+		height:100%;
+		width: 100%;
+		transition: .5s ease; /*added */
+  		backface-visibility: hidden;
+  		opacity: 1;
+  		display: inline-block; /*end added*/
+	}
+
+	.abouttext {
+		padding: 15px;
+	}
+
+	.about {
+		padding:20px;
+	}
+
+	.thumbnail {
+		height: 100%;
+	}
+
+	.thumbnail img {
+    	height:250px;
+    	width:400px;
+	}
+
+	.row.display-flex {
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+
+	/* -- END STYLING OF ABOUT SECTION -- */
+
+		/* -- BEGIN STYLING OF FOOTER -- */
+
+	footer {
+		background-color: #0B111E;
+		padding-bottom:5px;
+	}
+
+	.social li {
+		background: none repeat scroll 0 0 #3B5998;
+		border: 2px solid #B5B5B5;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		border-radius: 50%;
+		float: left;
+		height: 36px;
+		line-height: 36px;
+		margin: 0 8px 0 0;
+		padding: 0;
+		text-align: center;
+		width: 36px;
+		transition: all 0.5s ease 0s;
+		-moz-transition: all 0.5s ease 0s;
+		-webkit-transition: all 0.5s ease 0s;
+		-ms-transition: all 0.5s ease 0s;
+		-o-transition: all 0.5s ease 0s;
+	}
+
+	.social li:hover {
+		transform: scale(1.15) rotate(360deg);
+		-webkit-transform: scale(1.1) rotate(360deg);
+		-moz-transform: scale(1.1) rotate(360deg);
+		-ms-transform: scale(1.1) rotate(360deg);
+		-o-transform: scale(1.1) rotate(360deg);
+	}
+
+	.social li a {
+		color: #EDEFF1;
+	}
+
+	.social li:hover {
+		border: 2px solid #2c3e50;
+		background: #0B111E;
+	}
+
+	.social li a i {
+		font-size: 16px;
+		margin: 0 0 0 5px;
+		color: #FFFFFF !important;
+	}
+
+	/* -- END STYLING OF FOOTER -- */
+
+
+	</style>
+
+</head>
+<body>
+
+	<!-- BEGIN NAVBAR HEADER -->
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="capstone1day7_sioco.html" style="color:#FFFFFF">MarahuyoGuides</a>
+				</div> <!--THIS DIV IS THE WHOLE NAVBAR HEADER -->
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="capstone1day7_sioco.html" style="color:#FFFFFF">Home</a></li> <!--THESE ARE THE LINK BUTTONS -->
+						<li><a href="capstone1day7_siocoAbout.html" style="color:#FFFFFF">About</a></li>
+						<li><a href="capstone1day7_siocoDiscover.html" style="color:#FFFFFF">Discover</a></li>
+						<li class="dropdown">
+								<a href="capstone1day7_siocoDiscover.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoKaizen.html">Kaizen</a></li>
+									<li><a href="capstone1day7_siocoOmotenashi.html">Omotenashi</a></li>
+									<li><a href="capstone1day7_siocoKodawari.html">Kodawari</a></li>
+								</ul>
+						</li>
+						<li class="active"><a href="capstone1day7_siocoExperience.html">Experience</a></li>
+						<li class="dropdown">
+								<a href="capstone1day7_siocoExperience.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoIkebana.html">Ikebana</a></li>
+									<li><a href="capstone1day7_siocoKendo.html">Kendo</a></li>
+									<li><a href="capstone1day7_siocoArchery.html">Kyudo</a></li>
+									<li><a href="capstone1day7_siocoRyokan.html">Ryokan</a></li>
+									<li><a href="capstone1day7_siocoKaiseki.html">Kaiseki</a></li>
+									<li><a href="capstone1day7_siocoShinkansen.html">Shinkansen</a></li>
+									<li><a href="capstone1day7_siocoMochi.html">Mochi</a></li>
+									<li><a href="capstone1day7_siocoSushi.html">Sushi</a></li>
+								</ul>
+							</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+<!-- END NAVBAR DEFAULT or SITE HEADER-->
+
+<!-- BEGIN BODY -->
+
+<!-- BEGIN SECTION ABOUT LANDING -->
+	
+	<div class="container-fluid">
+		<div class="row">
+			<img class="landingimg img-responsive" src="ikehead.png">
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+				<div class="abouttext">
+					<h1 style="text-align:center">HISTORY</h1>
+						<br>
+					<p style="text-align:justify">Since flower arrangement entered Japan from China with Buddhism, it naturally was imbued with Chinese and Buddhist philosophy. The Buddhist desire to preserve life lies at the root of the whole subject and has created most of the rules of flower arrangement, controlling also the shapes of the flower vases, which are so formed as to help to prolong the life of the flowers. So much thought and time would never have been given to preservatives had not this desire predominated in all their floral offerings. The idea of good and evil fortune governs both the selection of material and the form of arrangement. The concept of hanakotoba (花言葉) is the Japanese form of the language of flowers. In this practice, plants are given codes and passwords. Physiological effects and action under the color of the flowers, put into words from the impressions of nature and the presence of thorns with the height of tall plants, flowers and garlands of flowers through the various types. These are meant to convey emotion and communicate directly to the recipient or viewer without needing the use of words.</p>
+
+					<p style="text-align:justify">More than simply putting flowers in a container, ikebana is a disciplined art form in which nature and humanity are brought together. Contrary to the idea of a particolored or multicolored arrangement of blossoms, ikebana often emphasizes other areas of the plant, such as its stems and leaves, and puts emphasis on shape, line, and form. Though ikebana is an expression of creativity, certain rules govern its form. The artist's intention behind each arrangement is shown through a piece's color combinations, natural shapes, graceful lines, and the implied meaning of the arrangement. Another common but not exclusive aspect present in ikebana is its employment of minimalism. Some arrangements may consist of only a minimal number of blooms interspersed among stalks and leaves. Consideration of the vase as being something more than a mere holder of the flowers is purely Japanese. They think of the surface of the water, which they always expose, as the surface of earth from which the group springs. This aids in creating the effect of representing a complete plant growing as nearly as possible in its natural conditions. The spiritual aspect of kadō is considered very important to its practitioners. Some practitioners feel silence is needed while making ikebana while others feel this is not necessary. It is a time to appreciate things in nature that people often overlook because of their busy lives. It is believed that one becomes more patient and tolerant of differences, not only in nature, but also in general. Kadō can inspire one to identify with beauty in all art forms. This is also a time when one feels close to nature, which provides relaxation for the mind, body, and soul.</p>
+
+					<small>Sourced from: Wikipedia Commons. ---- Image Created from: Canva</small>
+				</div>
+		</div>
+	</div>
+
+<!-- END SECTION ABOUT LANDING -->
+
+<!-- BEGIN SECTION ABOUT -->
+
+	<br>
+	<hr class="grey">
+	<br>
+	<h1 style="text-align: center">WHERE TO GO</h1>
+	<br>
+	<br>
+	<div class="container">
+		<div class="row display-flex">
+			  <div class="col-sm-4 col-md-4">
+			    <div class="thumbnail">
+			      <img src="amikyotologo.jpg" alt="...">
+			      <div class="caption" style="text-align: justify;">
+			        <h2><a href="https://www.whattodoinkyoto.com/">Ami Kyoto</a></h2>
+			        <p style="font-weight: bold;">373-26 Horiikecho, Higashiyama Ward, Kyoto, Kyoto Prefecture 605-0038, Japan.</p>
+
+			        <p>With over 99% positive reviews on TripAdvisor, you can be sure of getting the total experience of Ikebana at Ami Kyoto.</p>
+
+			        <p>Located in the heart of the city, Ami Kyoto provides the excellent backdrop for learning about the Japanese culture, complete with the funny, warm, hosts and a charming traditional house.</p>
+
+			        <p>Beyond Ikebana, you may also opt for other classes such as Calligraphy, and Tea Ceremony.</p>
+
+			        <p>Please make sure to refer to their website for additional information as well as updates in case their classes don't push through for the day. It is also highly suggested that you should contact the place beforehand to be able to prepare for the visit. We have provided a link below for your contact and location references, please feel free to click the button below.</p>
+
+			        <br>
+
+			    	<p><a href="https://www.google.com.ph/maps/place/Ami+Kyoto/@35.0100334,135.7797903,17z/data=!3m1!4b1!4m5!3m4!1s0x600108e7b9688ef7:0xb3c9ece2a0131645!8m2!3d35.010029!4d135.781979?hl=en" class="btn btn-block" role="button">Locate</a></p>
+
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="col-sm-4 col-md-4">
+			    <div class="thumbnail">
+			      <img src="wakjapanlogo.jpg" alt="...">
+			      <div class="caption" style="text-align: justify;">
+			        <h2><a href="http://wakjapan.jp/">Wak Japan</a></h2>
+			        <p style="font-weight: bold">Main Office: 761 Tenshucho, Nakagyo Ward, Nakagyo-ku, Kyoto Kyoto Prefecture 604-0812, Japan.</p>
+
+			        <p>Wak Japan was founded for the main purpose of bridging international relations through a grassroots-level engagement with local traditions. To do this, they wanted to provide highly-skilled unemployed housewives/artisans a space to showcase their work to foreign and local travelers alike.</p>
+
+			        <p>Similar to Ami Kyoto, at Wak Japan, you can expect more than just Ikebana on offer.</p>
+
+			        <p>Visitors should be notified though about the various locations of Wak Japan's facilities. Please refer to their <a href="http://wakjapan.jp/">site</a> for additional references before visiting.</p>
+
+			        <p>Do use the links provided for your reference for additional information, as well as updates in case their classes don't push through for the day. Please contact them for further details. We have provided a link below for your contact and location references, please feel free to click the button below.</p>
+			        
+			        <p><a href="https://www.google.com.ph/maps/place/Wak+Japan+%E3%80%8CWakwak-kan%E3%80%8D/@35.0145324,135.7603993,17z/data=!3m1!4b1!4m5!3m4!1s0x6001088893e41985:0xb6fe7b6e2e830402!8m2!3d35.014528!4d135.762588?hl=en" class="btn btn-block" role="button">Locate</a></p>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="col-sm-4 col-md-4">
+			    <div class="thumbnail">
+			      <img src="ikebanajumbo.jpg" alt="...">
+			      <div class="caption" style="text-align: justify;">
+			        <h2><a href="http://www.ikenobo.jp/english/">Ikenobo Society of Floral Art</a></h2>
+			        <p style="font-weight: bold">Main Office: 248, Donomae-cho, Rokkaku-dori Higashinotoin Nishi-iru Nakagyo-ku, Kyoto 604-8134, Kyoto Prefecture, Japan.</p>
+			        <p>If we're going to talk about Ikebana, there's no way we're not bringing up Ikenobo. For as long as Ikebana has been in existence, Ikenobo has been around as well. If you want to dive deep into the intricate details of Ikebana's history, lore, and exhibits, make sure to make your way to Ikenobo Headquarters in Kyoto.</p>
+
+			        <p>The whole year round, visitors are welcome to visit and explore. It is highly advisable to contact the staff first before you do, they prefer to be informed before a guest's visit to prepare.</p>
+
+			        <p>For an additional treat, guests can add to their experience by visiting the seasonal exhibits in their space. Do refer to the links provided for additional references and contacts. Feel free to contact them for additional questions.</p>
+
+			        <p><a href="https://www.google.com.ph/maps/place/Ikenobo+Headquarter/@35.0079768,135.7577073,17z/data=!3m1!4b1!4m5!3m4!1s0x600108853a9349c7:0x63072a2785b0159!8m2!3d35.0079724!4d135.759896?hl=en35.010029!4d135.781979?hl=en" class="btn btn-block" role="button">Locate</a></p>
+			      </div>
+			   </div>
+			 </div>
+		</div>
+	</div>
+
+<!-- END SECTION ABOUT -->
+
+<!-- BEGIN JAVASCRIPT -->
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- END OF JAVASCRIPT -->
+
+
+<!-- BEGIN FOOTER -->
+<footer>
+	<hr class="grey">
+	    <div class="footer navbar-bottom" id="footer">	        
+	        <div class="container">
+	        	<div class="row">
+		           <p class="pull-left" style="color:#ffffff"> Copyright &copy Miguel Martin Sioco 2018. <bold>MarahuyoGuides</bold>.</p>
+		            	<div class="pull-right">
+		                	<ul class="social">
+			                   <li><a href="https://www.facebook.com/miguelmartin.sioco"><i class="fa fa-facebook"></i></a></li>
+			                    <li> <a href="https://www.instagram.com/miguelsioco/"><i class="fa fa-instagram"></i></a></li>
+			                    <li> <a href="https://www.linkedin.com/in/miguelmartinsioco/"><i class="fa fa-linkedin"></i></a></li>
+		                	</ul>
+		                	<br>
+		            	</div>
+	        	</div>
+	    	</div>
+	    </div>
+</footer>
+
+	
+
+	<!-- CLOSE FOOTER -->
+
+</body>
+</html>

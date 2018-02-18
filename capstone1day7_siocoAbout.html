@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport", content="device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+	<link href="https://fonts.googleapis.com/css?family=Oleo+Script|Lato|Oswald" rel="stylesheet">
+
+	<title>About - MarahuyoGuides</title>
+
+	<style>
+
+	/* -- UNIVERSAL STYLING -- */
+
+	* {
+		box-sizing: border-box;
+		margin: 0px;
+	}
+
+	/* -- BEGIN GENERAL TEXT STYLING -- */
+
+	.btn {
+		color: #FFFFFF;
+		background-color: #0B111E;
+		border: 1px solid white;
+	}
+
+	.btn:hover {
+		color: #8B9DC3;
+	}
+
+	body {
+		padding-top:50px;
+	}
+
+	h1 {
+		font-family: 'Oswald', sans-serif;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-family:'Lato', sans-serif;
+	}
+
+	p {
+		font-family:'Lato', sans-serif;
+		font-weight: lighter;
+	}
+
+	a {
+		font-family:'Lato', sans-serif;
+	}
+
+	/* -- END GENERAL TEXT STYLING -- */
+
+	/* -- BEGIN NAVBAR STYLING -- */
+
+	.navbar-brand {
+		color: #0B111E;
+		font-family:'Oswald', sans-serif;
+		font-weight: bold;
+		font-size: 25px;
+	}
+
+	.navbar {
+		background-color: #0B111E;
+	}
+
+	/* -- END NAVBAR STYLING -- */
+
+	/* -- BEGIN ABOUT SECTION STYLING -- */
+
+	.landingimg {
+		height:100%;
+		width: 100%;
+		transition: .5s ease;
+  		backface-visibility: hidden;
+  		opacity: 1;
+  		display: inline-block;
+	}
+
+	.middle {
+	  transition: .5s ease;
+	  opacity: 0;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  text-align: center;
+	  font-family: 'Oswald', sans-serif;
+		font-weight: bold;
+	}
+
+	.container-fluid:hover .landingimg {
+		  opacity: 0.3;
+		}
+
+	.container-fluid:hover .middle {
+		  opacity: 1;
+		}
+
+	.text {
+		  background-color: #0B111E;
+		  color: #FFFFFF;
+		  font-size: 2em;
+		  padding: 10px 30px;
+		}
+
+	.abouttext {
+		padding: 15px;
+	}
+
+	.about {
+		padding:20px;
+	}
+
+	.signature {
+		font-family: 'Oleo Script', cursive;
+		font-weight: bold;
+		font-size: 2em;
+	}
+
+	.expimg {
+		border-radius: 10px;
+	}
+
+	/* -- END STYLING OF ABOUT SECTION -- */
+
+	/* -- BEGIN STYLING OF TESTIMONIALS SECTION -- */
+
+	.testimonials {
+		padding: 30px;
+	}
+
+	#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
+	}
+
+	#quote-carousel .carousel-control {
+	    background: none;
+	    color: #3B5998;
+	    font-size: 2.3em;
+	    text-shadow: none;
+	    margin-top: 30px;
+	}
+
+	#quote-carousel .carousel-indicators {
+	    position: relative;
+	    right: 50%;
+	    top: auto;
+	    bottom: 0px;
+	    margin-top: 20px;
+	    margin-right: -19px;
+	}
+
+	#quote-carousel .carousel-indicators li {
+	    width: 50px;
+	    height: 50px;
+	    cursor: pointer;
+	    border: 1px solid #ccc;
+	    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	    border-radius: 50%;
+	    opacity: 0.4;
+	    overflow: hidden;
+	    transition: all .4s ease-in;
+	    vertical-align: middle;
+	}
+
+	#quote-carousel .carousel-indicators .active {
+	    width: 128px;
+	    height: 128px;
+	    opacity: 1;
+	    transition: all .2s;
+	}
+
+	.item blockquote {
+	    border-left: none;
+	    margin: 0;
+	}
+
+	.item blockquote p:before {
+	    content: "\f10d";
+	    font-family: 'Fontawesome';
+	    float: left;
+	    margin-right: 10px;
+	}
+
+	/* -- END STYLING OF TESTIMONIALS SECTION -- */
+
+		/* -- BEGIN STYLING OF FOOTER -- */
+
+	footer {
+		background-color: #0B111E;
+		padding-bottom:5px;
+	}
+
+	.social li {
+		background: none repeat scroll 0 0 #3B5998;
+		border: 2px solid #B5B5B5;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		border-radius: 50%;
+		float: left;
+		height: 36px;
+		line-height: 36px;
+		margin: 0 8px 0 0;
+		padding: 0;
+		text-align: center;
+		width: 36px;
+		transition: all 0.5s ease 0s;
+		-moz-transition: all 0.5s ease 0s;
+		-webkit-transition: all 0.5s ease 0s;
+		-ms-transition: all 0.5s ease 0s;
+		-o-transition: all 0.5s ease 0s;
+	}
+
+	.social li:hover {
+		transform: scale(1.15) rotate(360deg);
+		-webkit-transform: scale(1.1) rotate(360deg);
+		-moz-transform: scale(1.1) rotate(360deg);
+		-ms-transform: scale(1.1) rotate(360deg);
+		-o-transform: scale(1.1) rotate(360deg);
+	}
+
+	.social li a {
+		color: #EDEFF1;
+	}
+
+	.social li:hover {
+		border: 2px solid #2c3e50;
+		background: #0B111E;
+	}
+
+	.social li a i {
+		font-size: 16px;
+		margin: 0 0 0 5px;
+		color: #FFFFFF !important;
+	}
+
+	/* -- END STYLING OF FOOTER -- */
+
+
+	</style>
+
+</head>
+<body>
+
+	<!-- BEGIN JAVASCRIPT -->
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+
+	<!-- END OF JAVASCRIPT -->
+
+	<!-- BEGIN NAVBAR HEADER -->
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="capstone1day7_sioco.html" style="color:#FFFFFF">MarahuyoGuides</a>
+				</div> <!--THIS DIV IS THE WHOLE NAVBAR HEADER -->
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="capstone1day7_sioco.html" style="color:#FFFFFF">Home</a></li> <!--THESE ARE THE LINK BUTTONS -->
+						<li class="active"><a href="capstone1day7_siocoAbout.html">About</a></li>
+						<li><a href="capstone1day7_siocoDiscover.html" style="color:#FFFFFF">Discover</a></li>
+						<li class="dropdown">
+								<a href="capstone1day7_siocoDiscover.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoKaizen.html">Kaizen</a></li>
+									<li><a href="capstone1day7_siocoOmotenashi.html">Omotenashi</a></li>
+									<li><a href="capstone1day7_siocoKodawari.html">Kodawari</a></li>
+								</ul>
+							</li>
+						<li><a href="capstone1day7_siocoExperience.html" style="color:#FFFFFF">Experience</a></li>
+						<li class="dropdown">
+								<a href="capstone1day7_siocoExperience.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoIkebana.html">Ikebana</a></li>
+									<li><a href="capstone1day7_siocoKendo.html">Kendo</a></li>
+									<li><a href="capstone1day7_siocoArchery.html">Kyudo</a></li>
+									<li><a href="capstone1day7_siocoRyokan.html">Ryokan</a></li>
+									<li><a href="capstone1day7_siocoKaiseki.html">Kaiseki</a></li>
+									<li><a href="capstone1day7_siocoShinkansen.html">Shinkansen</a></li>
+									<li><a href="capstone1day7_siocoMochi.html">Mochi</a></li>
+									<li><a href="capstone1day7_siocoSushi.html">Sushi</a></li>
+								</ul>
+							</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+<!-- END NAVBAR DEFAULT or SITE HEADER-->
+
+<!-- BEGIN BODY -->
+
+<!-- BEGIN SECTION ABOUT LANDING -->
+	
+	<div class="container-fluid">
+		<div class="row">
+			<img class="landingimg img-responsive" src="cinematic.jpg">
+		<div class="middle">
+		    <div class="text"><span style="color:gold">Marahuyo</span><br><span style="color:green">.verb</span>/<span style="color:#3B5998">To Enchant</span><br>Scroll Down for More
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+				<div class="abouttext">
+					<h1 style="text-align:center">ABOUT</h1>
+						<br>
+					<p style="text-align:justify">Travel guides are well and many during this time of tech, digital and social media. You have big corporates, small to medium-sized operations, down to the individual amateur on guerilla social media. To say that we're oversaturated with them is an understatement. So what does MarahuyoGuides aim to do given that we started off with that opening? Well first off, we're not your ordinary, everyday travel guide. We're your digital repository of relevant cultural information in this day of information indulgence. Think of us as a digital minimalistic travel editorial written by Anthony Bourdain or Fyodor Dostoyevsky.</p> 
+
+					<p style="text-align: justify;">We simplify the process of discovery and experience by focusing on the identity of the places we've been to, and the stories they've told us. So, we'll skip the where to go and the what to do and we'll dive into the who to get to know and what to understand. We aim to create love letters to countries we have fallen in love with, in the hopes of letting you fall in love in the process of discovery and experience as well.</p>
+
+					<p style="text-align: justify;">We are after all named after the tagalog verb, <a href="https://www.pinterest.com/pin/544794886153263194/"><span style="color:darkorange">Marahuyo</span></a>. Which simply means, to <span style="color:red">enchant</span>. It is after all a romantic thing, to travel. But with the amount of social media, sharing, and technology interfering with the overall experiences, it becomes quite hard to fall in love in it's truest sense. That's where we come in.</p>
+
+					<p style="text-align: justify;">So we kick off our first edition, with a trip to Japan. Let us help you get to know Japan in a way you've never gotten to know it before. If you think Japan is amazing, wait till you find out what we know. So if you're the one to break away from the norm, and you're willing to permeate through tourist lines and travel lists, read on, visitor. Dare to be different and break the chain of routinary travel. Marahuyo ka sa biyahe!</p>
+
+					<br>
+
+					<p class="signature" style="text-align: center;">Yours truly,<br>MarahuyoGuides Team</p>
+				</div>
+		</div>
+	</div>
+
+<!-- END SECTION ABOUT LANDING -->
+
+<!-- BEGIN SECTION ABOUT -->
+
+	<br>
+	<hr class="grey">
+	<br>
+	<h1 style="text-align: center">What is Discover and Experience?</h1>
+	<br>
+	<br>
+	<div class="container about">
+		<div class="row">
+			<div class="col-sm-6 col-md-6">
+				<img class="expimg img-responsive" src="discover.jpeg" alt="..."></div>
+			<div class="col-sm-6 col-md-6">
+				<h2>Discover<small> /.verb</small></h2>
+				<p style="text-align: justify;">Discovering things nowadays takes one click of a mouse and or a trackpad. We're lucky to live in a world where information thrives at the click or touch of a button. It would be routinary to expect that we're using the information for some good at the very least. Sadly, not all do. Discovering things has now become a contest on social media, who found out first, or who's getting the most engagement. Less on the informational purposes, more on the selfies and geo-tags. So we're hoping to change that paradigm. Let's go back to the basics of what discovering things, places, and people are all about. That is of course, to learn and experience. Wisdom is after all, knowledge put to good use. So, go on and click that button. You've made it this far.</p>
+			    <p><a href="capstone1day7_siocoDiscover.html" class="btn btn-block" role="button" style="background-color:#0B111E">Check out Discover Stories</a></p>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="container about">
+		<div class="row">
+			<div class="col-sm-6 col-md-6">
+				<img class="expimg img-responsive" src="experience.jpeg" alt="..."></div>
+			 <div class="col-sm-6 col-md-6">
+			    <h2>Experience<small> /.verb</small></h2>
+			    <p style="text-align: justify;">This generation has taken so much flak from the previous generations, to some depressing degree, even from the very people who raised us. The millennials are not lazy, we're not entitled. Well, maybe some are. But the defining charateristic of our generation has always been about our pursuit for quality experiences. We're all trying to get out of this rat race, trying to find meaning and purpose. Daring to question the borders of human curiousity. So enough about just reading and learning, we're going to continue stirring that millennial pot of experience, and offer up some culturally-relevant experiences that all of you can partake in. Hopefully, allowing visitors to leave as friends of the places they've been to, leaving behind a piece of their hearts in the process.</p>
+			    <p><a href="capstone1day7_siocoExperience.html" class="btn btn-block" role="button" style="background-color:#0B111E">Check out Experiences</a></p>
+			</div>
+		</div>
+	</div>
+
+<!-- END SECTION ABOUT -->
+
+<!-- BEGIN SECTION TESTIMONIALS -->
+	<hr class="grey">
+	<br>
+	<br>
+
+	<div class="container testimonials">
+        <div class="row">
+            <div class="col-md-12">
+            <h1 style="text-align: center">See What Others have Experienced and Discovered</h1>
+                <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                    <!-- Carousel Slides / Quotes -->
+                    <div class="carousel-inner text-center">
+                        <!-- Quote 1 -->
+                        <div class="item active">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>So snarky, brilliant, and daring! I swear I could have wrote this own stuff except for that fact that I didn't. This isn't really Anthony Bourdain by the way, it's the internet. I could be a grandmother living in the baltic region, feeding seventeen cats. Or I could really be Anthony. But probably not.</p>
+                                        <small>Anthony Bourdain</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+
+     <!-- BEGIN Testimonial 2 -->
+
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>Are you still reading? I swear if you could believe this is really Elon Musk, then I could get away with everything. I mean come on, the guy is dating Amber Heard, and just sent a freaking car to space. How would he ever find time for writing a review? Then again, maybe he has time in between replying to haters on twitter. The mystery of Elon's time management skills goes on.</p>
+                                        <small>Elon Musk</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+
+     <!-- END Testimonial 2 -->
+
+     <!-- BEGIN Testimonial 3 -->
+
+                        <div class="item">
+                            <blockquote>
+                                <div class="row">
+                                    <div class="col-sm-8 col-sm-offset-2">
+                                        <p>I honestly think she'll like this. Other than that, I just like really, really adore Liza. You should google her, it's very SFW, pinky swear. You'll thank me later.</p>
+                                        <small>Liza Soberano</small>
+                                    </div>
+                                </div>
+                            </blockquote>
+                        </div>
+                    </div>
+
+         <!-- END Testimonial 3 -->
+
+     <!-- BEGIN Bottom Carousel Indicators -->
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="bourdain.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="elon.jpg" alt="">
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="liza.jpg" alt="">
+                        </li>
+                    </ol>
+
+     <!-- END Bottom Carousel Indicators -->
+
+     <!-- Carousel Buttons Next/Prev -->
+
+                    <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+                    <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- END SECTION TESTIMONIALS -->
+
+<!-- BEGIN FOOTER -->
+<footer>
+	<hr class="grey">
+	    <div class="footer navbar-bottom" id="footer">	        
+	        <div class="container">
+	        	<div class="row">
+		           <p class="pull-left" style="color:#ffffff"> Copyright &copy Miguel Martin Sioco 2018. <bold>MarahuyoGuides</bold>.</p>
+		            	<div class="pull-right">
+		                	<ul class="social">
+			                   <li><a href="https://www.facebook.com/miguelmartin.sioco"><i class="fa fa-facebook"></i></a></li>
+			                    <li> <a href="https://www.instagram.com/miguelsioco/"><i class="fa fa-instagram"></i></a></li>
+			                    <li> <a href="https://www.linkedin.com/in/miguelmartinsioco/"><i class="fa fa-linkedin"></i></a></li>
+		                	</ul>
+		                	<br>
+		            	</div>
+	        	</div>
+	    	</div>
+	    </div>
+</footer>
+
+	<!-- CLOSE FOOTER -->
+
+</body>
+</html>

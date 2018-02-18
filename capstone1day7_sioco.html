@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport", content="device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+	<link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+
+	<title>MarahuyoGuides - Discover Japan</title>
+
+	<style>
+
+	/* -- UNIVERSAL STYLING -- */
+
+	* {
+		box-sizing: border-box;
+	}
+
+	/* -- BEGIN GENERAL TEXT STYLING -- */
+
+	h1 {
+		font-family: 'Oswald', sans-serif;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-family:'Lato', sans-serif;
+	}
+
+	p {
+		font-family:'Lato', sans-serif;
+		font-weight: lighter;
+	}
+
+	a {
+		font-family:'Lato', sans-serif;
+	}
+
+	.btn {
+		color: #FFFFFF;
+		background-color: #0B111E;
+		border: 1px solid white;
+	}
+
+	.btn:hover {
+		color: #8B9DC3;
+	}
+
+	/* -- END GENERAL TEXT STYLING -- */
+
+	/* -- BEGIN NAVBAR STYLING -- */
+
+	.navbar-brand {
+		font-family:'Oswald', sans-serif;
+		font-weight: bold;
+		font-size: 25px;
+	}
+
+	.navbar {
+		background-color: #0B111E;
+	}
+
+	/* -- END NAVBAR STYLING -- */
+
+	/* -- BEGIN CAROUSEL STYLING -- */
+
+	.carousel {
+		top: 50px;
+	}
+
+	.carousel-caption {
+    top: 50%;
+    bottom: auto;
+    letter-spacing: 1px;
+	}
+
+	/* -- END CAROUSEL STYLING -- */
+
+	/* -- BEGIN JUMBOTRON SECTION/WELCOME SECTION STYLING -- */
+
+	.jumbotron {
+		padding: 50px;
+		top: 100px;
+		text-align: center;
+		height: 40%;
+		background-color: #ffffff
+	}
+
+	.jumbotext {
+		padding: 20%;
+	}
+
+	/* -- END JUMBOTRON SECTION/WELCOME SECTION STYLING -- */
+
+	/* -- BEGIN STYLING OF DISCOVER STORIES SECTION -- */
+
+	.thumbnail {
+		height: 100%;
+	}
+
+	.row.display-flex {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	/* -- END OF STYLING DISCOVER STORIES SECTION -- */
+
+	/* -- BEGIN STYLING OF EXPERIENCE SECTION -- */
+
+	.expimg {
+		border-radius: 10px;
+	}
+
+	/* -- END OF STYLING EXPERIENCE SECTION -- */
+
+	/* -- BEGIN STYLING OF FOOTER -- */
+
+
+	footer {
+		background-color: #0B111E;
+		padding-bottom:5px;
+	}
+
+	.social li {
+		background: none repeat scroll 0 0 #3B5998;
+		border: 2px solid #B5B5B5;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		border-radius: 50%;
+		float: left;
+		height: 36px;
+		line-height: 36px;
+		margin: 0 8px 0 0;
+		padding: 0;
+		text-align: center;
+		width: 36px;
+		transition: all 0.5s ease 0s;
+		-moz-transition: all 0.5s ease 0s;
+		-webkit-transition: all 0.5s ease 0s;
+		-ms-transition: all 0.5s ease 0s;
+		-o-transition: all 0.5s ease 0s;
+	}
+
+	.social li:hover {
+		transform: scale(1.15) rotate(360deg);
+		-webkit-transform: scale(1.1) rotate(360deg);
+		-moz-transform: scale(1.1) rotate(360deg);
+		-ms-transform: scale(1.1) rotate(360deg);
+		-o-transform: scale(1.1) rotate(360deg);
+	}
+
+	.social li a {
+		color: #EDEFF1;
+	}
+
+	.social li:hover {
+		border: 2px solid #2c3e50;
+		background: #0B111E;
+	}
+
+	.social li a i {
+		font-size: 16px;
+		margin: 0 0 0 5px;
+		color: #FFFFFF !important;
+	}
+
+	/* -- END STYLING OF FOOTER -- */
+
+	</style>
+
+</head>
+
+<body>
+
+	<!-- BEGIN JAVASCRIPT -->
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+
+	<!-- END OF JAVASCRIPT -->
+
+	<!-- BEGIN NAVBAR HEADER -->
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="capstone1day7_sioco.html" style="color:#FFFFFF">MarahuyoGuides</a>
+				</div> <!--THIS DIV IS THE WHOLE NAVBAR HEADER -->
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="capstone1day7_sioco.html">Home</a></li> <!--THESE ARE THE LINK BUTTONS -->
+						<li><a href="capstone1day7_siocoAbout.html" style="color:#FFFFFF">About</a></li>
+						<li><a href="capstone1day7_siocoDiscover.html" style="color:#FFFFFF">Discover</a></li>
+							<li class="dropdown"> <!-- THIS IS THE RIGHT DROPDOWN BUTTON -->
+								<a href="capstone1day7_siocoDiscover.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoKaizen.html">Kaizen</a></li>
+									<li><a href="capstone1day7_siocoOmotenashi.html">Omotenashi</a></li>
+									<li><a href="capstone1day7_siocoKodawari.html">Kodawari</a></li>
+								</ul>
+							</li>
+						<li><a href="capstone1day7_siocoExperience.html" style="color:#FFFFFF">Experience</a></li>
+							<li class="dropdown"> <!-- THIS IS THE RIGHT DROPDOWN BUTTON -->
+								<a href="capstone1day7_siocoExperience.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoIkebana.html">Ikebana</a></li>
+									<li><a href="capstone1day7_siocoKendo.html">Kendo</a></li>
+									<li><a href="capstone1day7_siocoArchery.html">Kyudo</a></li>
+									<li><a href="capstone1day7_siocoRyokan.html">Ryokan</a></li>
+									<li><a href="capstone1day7_siocoKaiseki.html">Kaiseki</a></li>
+									<li><a href="capstone1day7_siocoShinkansen.html">Shinkansen</a></li>
+									<li><a href="capstone1day7_siocoMochi.html">Mochi</a></li>
+									<li><a href="capstone1day7_siocoSushi.html">Sushi</a></li>
+								</ul>
+							</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+<!-- END NAVBAR DEFAULT or SITE HEADER-->
+
+<!-- BEGIN BODY -->
+
+<!-- 	<section class="carousell"> -->
+	<div class="container-fluid">
+		<div class="row">	
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"></li>
+			    <li data-target="#myCarousel" data-slide-to="2"></li>
+			    <li data-target="#myCarousel" data-slide-to="3"></li>
+			    <li data-target="#myCarousel" data-slide-to="4"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+			    <div class="item active">
+			      <img src="kaizen4.jpg" alt="kaizen">
+			      <div class="carousel-caption">
+			        <h1>Japan is</h1>
+			        <h2>Precision</h2>
+			        <p><a class="btn btn-lg" href="capstone1day7_siocoKaizen.html" role="button">Discover Kaizen</a></p>
+			      </div>
+			    </div>
+
+			    <div class="item">
+			      <img src="omotenashi3.jpg" alt="omotenashi">
+			      <div class="carousel-caption">
+			        <h1>Japan is</h1>
+			        <h2>Detail</h2>
+			        <p><a class="btn btn-lg" href="capstone1day7_siocoOmotenashi.html" role="button">Discover Omotenashi</a></p>
+			      </div>
+			    </div>
+
+			    <div class="item">
+			      <img src="kodawari2.jpg" alt="kodawari">
+			      <div class="carousel-caption">
+			        <h1>Japan is</h1>
+			        <h2>Obsession</h2>
+			        <p><a class="btn btn-lg" href="capstone1day7_siocoKodawari.html" role="button">Discover Kodawari</a></p>
+			      </div>
+			    </div>
+
+			    <div class="item">
+			      <img src="kodawari1.jpg" alt="kodawari">
+			      <div class="carousel-caption">
+			        <h1>Japan is</h1>
+			        <h2>Efficiency</h2>
+			        <p><a class="btn btn-lg" href="capstone1day7_siocoKaizen.html" role="button">Experience Kaizen</a></p>
+			      </div>
+			    </div>
+
+			    <div class="item">
+			      <img src="cinematic2.jpg" alt="kodawari">
+			      <div class="carousel-caption">
+			        <h1>Japan is</h1>
+			        <h2>Cinematic</h2>
+			        <p><a class="btn btn-lg" href="capstone1day7_siocoOmotenashi.html" role="button">Experience Omotenashi</a></p>
+			      </div>
+			    </div>
+
+			    <div class="item">
+			      <img src="kodawari4.jpg" alt="kodawari">
+			      <div class="carousel-caption">
+			        <h1>Japan is</h1>
+			        <h2>Tradition</h2>
+			       	<p><a class="btn btn-lg" href="capstone1day7_siocoKodawari.html" role="button">Experience Kodawari</a></p>
+			      </div>
+			    </div>
+
+			  </div>
+
+			  <!-- Left and right controls -->
+			  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+		</div>
+	</div>
+<!-- 	CLOSE </section> Carousel -->
+
+<!-- BEGIN SECTION JUMBOTRON -->
+
+	<div class=container-fluid>
+		<div class="row">
+			<div class="jumbotron">
+				<div class="jumbotext">
+				  <h1>Welcome to our Japan edition.</h1>
+				  <br>
+				  <h2>We'll change the way you travel, experience, and discover the land of the rising sun. We'll do it one story at a time.</h2>
+				  <br>
+				  <br>
+				  <br>
+				  <hr class="black">
+				  <p><a class="btn btn-lg" href="capstone1day7_siocoDiscover.html" role="button">Let's Start Your Journey</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- END SECTION JUMBOTRON -->
+
+	<!-- BEGIN SECTION STORIES THUMBNAILS -->
+	<hr class="grey">
+	<br>
+	<h1 style="text-align: center">Discover the heart and soul of Japan through it's stories</h1>
+	<br>
+	<br>
+	<div class="container">
+		<div class="row display-flex">
+			  <div class="col-sm-4 col-md-4">
+			    <div class="thumbnail">
+			      <img class="thumbimg img-responsive" src="experience3.jpg" alt="...">
+			      <div class="caption">
+			        <h3>Philosophy of Change</h3>
+			        <p style="text-align: justify;">Japan has been known for a myriad of descriptions and culture references, but a large part of it's reputational backbone lies in it's legendary resilient nature. Although we've heard of Kaizen from companies such as Motorola or adverts from other Japanese companies, Kaizen has a deeper meaning beyond business and management. In Japanese culture, Kaizen permeates through the walls of it's corporations, and onto the fabric of daily life. Join us as we dive deep into what makes this culture thrive in the story of change and perpetuity.</p>
+			        <br>
+			        <p><a href="capstone1day7_siocoKaizen.html" class="btn btn-block" role="button">Discover</a></p>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="col-sm-4 col-md-4">
+			    <div class="thumbnail">
+			      <img class="thumbimg img-responsive" src="omotenashiexp.jpg" alt="...">
+			      <div class="caption">
+			        <h3>Value of Service</h3>
+			        <p style="text-align: justify;">Everybody can attest to the experience of how their perception of customer service changed after going to Japan. Beyond the bowing, the courteous gestures, and the proper table-side manners, Japan has a culture based on the value of providing amazing service day in and day out. With the incoming Olympic hosting in Tokyo in 2020, we've seen tourism adverts and articles sprouting up talking about Omotenashi. But what is it really? Follow us as we discover the roots of Omotenashi and what it really means to the Japanese culture.</p>
+			        <br>
+			        <p><a href="capstone1day7_siocoOmotenashi.html" class="btn btn-block" role="button">Discover</a></p>
+			      </div>
+			    </div>
+			  </div>
+
+			  <div class="col-sm-4 col-md-4">
+			    <div class="thumbnail">
+			      <img class="thumbimg img-responsive" src="kodawariexp.jpg" alt="...">
+			      <div class="caption">
+			        <h3>Relentless Devotion to Detail</h3>
+			        <p style="text-align: justify">You've probably never heard of the cultural value of Kodawari before, but it's for certain that you've raved about products, places or food experiences from Japan. If you ever were curious as to why it feels like this, look no further than understanding the story behind Kodawari. The country is shaped and moulded with detail in its every aspect of life. From intricately designed manholes and to exquisitely plated food, detail is king in this country. We'll help you make sense of all of this as we look into the psyche of this country's passionate people.</p>
+			        <br>
+			        <p><a href="capstone1day7_siocoKodawari.html" class="btn btn-block" role="button">Discover</a></p>
+			      </div>
+			   </div>
+			 </div>
+		</div>
+	</div>
+
+	<!-- END SECTION STORIES THUMBNAIL -->
+
+	<!-- BEGIN SECTION EXPERIENCES -->
+
+	<br>
+	<hr class="grey">
+	<br>
+	<h1 style="text-align: center">Experience the stories</h1>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-6">
+				<img class="expimg img-responsive" src="ikebana.jpg" alt="..."></div>
+			<div class="col-sm-6 col-md-6">
+				<h2>Kaizen - Learn Ikebana</h2>
+				<p style="text-align: justify">Ikebana is the art of flower arrangement and before you think this is limited to only women and aging housewives, let MarahuyoGuides stop you there. Ikebana is more than just the cutting and placing of stems, flowers, and twigs. It's actually therapeutic. It's even more rewarding to discover the principles and foundations of what makes it what it is today.</p>
+			    <p><a href="capstone1day7_siocoIkebana.html" class="btn btn-block" role="button">Experience</a></p>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-6">
+				<img class="expimg img-responsive" src="ryokan.jpg" alt="..."></div>
+			 <div class="col-sm-6 col-md-6">
+			    <h2>Omotenashi - Stay in a Ryokan</h2>
+			    <p style="text-align: justify">Ryokan is what a mom and pop bed and breakfast is to the Japanese. Think of cozy, warm, and beautiful and you'll instantly describe what Ryokans are. These inns are callbacks to the generational tradition of service in Japanese culture. Stay in one and we can make sure you'll never forget about it. In a good way of course.</p>
+			    <p><a href="capstone1day7_siocoRyokan.html" class="btn btn-block" role="button">Experience</a></p>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-6">
+				<img class="expimg img-responsive" src="mochi.jpg" alt="..."></div>
+			<div class="col-sm-6 col-md-6">
+				<h2>Kodawari - Watch a Mochi Making Session</h2>
+				<p style="text-align: justify">Mochi, they're pretty awesome rice cakes aren't they? You know what would make it even more awesome? Did you know that these things are traditionally made by beating the hell out of rice? All that destructive power creating cute and delicious delicacies. Pretty awesome by our standards. On a more serious note, the artisans shout while they beat the rice. On a more serious, serious note, we might be thinking of a career shift.</p>
+			    <p><a href="capstone1day7_siocoMochi.html" class="btn btn-block" role="button">Experience</a></p>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<br>
+
+	<!-- END SECTION EXPERIENCES -->
+
+	<!-- BEGIN FOOTER -->
+	<footer>
+	<hr class="grey">
+	    <div class="footer" id="footer">	        
+	        <div class="container">
+	        	<div class="row">
+		           <p class="pull-left" style="color:#ffffff"> Copyright &copy Miguel Martin Sioco 2018. <bold>MarahuyoGuides</bold>.</p>
+		            	<div class="pull-right">
+		                	<ul class="social">
+			                    <li><a href="https://www.facebook.com/miguelmartin.sioco"><i class="fa fa-facebook"></i></a></li>
+			                    <li> <a href="https://www.instagram.com/miguelsioco/"><i class="fa fa-instagram"></i></a></li>
+			                    <li> <a href="https://www.linkedin.com/in/miguelmartinsioco/"><i class="fa fa-linkedin"></i></a></li>
+		                	</ul>
+		                	<br>
+		            	</div>
+	        	</div>
+	    	</div>
+	    </div>
+	</footer>
+
+	<!-- CLOSE FOOTER -->
+
+
+</body>
+
+</html>

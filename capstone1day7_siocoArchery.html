@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport", content="device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+	<link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+
+	<title>Kyūdō - MarahuyoGuides</title>
+
+	<style>
+
+	/* -- UNIVERSAL STYLING -- */
+
+	* {
+		box-sizing: border-box;
+		margin: 0px;
+	}
+
+	/* -- BEGIN GENERAL TEXT STYLING -- */
+
+	body {
+		padding-top:50px;
+	}
+
+	h1 {
+		font-family: 'Oswald', sans-serif;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-family:'Lato', sans-serif;
+	}
+
+	h3 {
+		font-family:'Lato', sans-serif;
+	}
+
+	p {
+		font-family:'Lato', sans-serif;
+		font-weight: lighter;
+	}
+
+	a {
+		font-family:'Lato', sans-serif;
+	}
+
+	.btn {
+		color: #FFFFFF;
+		background-color: #0B111E;
+		border: 1px solid white;
+	}
+
+	.btn:hover {
+		color: #8B9DC3;
+	}
+
+		/* -- END GENERAL TEXT STYLING -- */
+
+	/* -- BEGIN NAVBAR STYLING -- */
+
+	.navbar-brand {
+		color: #0B111E;
+		font-family:'Oswald', sans-serif;
+		font-weight: bold;
+		font-size: 25px;
+	}
+
+	.navbar {
+		background-color: #0B111E;
+	}
+
+			/* -- END NAVBAR STYLING -- */
+
+/* -- BEGIN BODY SECTION STYLING -- */
+
+	.landingimg {
+		height:100%;
+		width: 100%;
+		transition: .5s ease; /*added */
+  		backface-visibility: hidden;
+  		opacity: 1;
+  		display: inline-block; /*end added*/
+	}
+
+	.abouttext {
+		padding: 15px;
+	}
+
+	.about {
+		padding:20px;
+	}
+
+	.expimg {
+		border-radius: 10px;
+	}
+
+
+		/* -- END STYLING OF ABOUT SECTION -- */
+
+		/* -- BEGIN STYLING OF FOOTER -- */
+
+	footer {
+		background-color: #0B111E;
+		padding-bottom:5px;
+	}
+
+	.social li {
+		background: none repeat scroll 0 0 #3B5998;
+		border: 2px solid #B5B5B5;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		border-radius: 50%;
+		float: left;
+		height: 36px;
+		line-height: 36px;
+		margin: 0 8px 0 0;
+		padding: 0;
+		text-align: center;
+		width: 36px;
+		transition: all 0.5s ease 0s;
+		-moz-transition: all 0.5s ease 0s;
+		-webkit-transition: all 0.5s ease 0s;
+		-ms-transition: all 0.5s ease 0s;
+		-o-transition: all 0.5s ease 0s;
+	}
+
+	.social li:hover {
+		transform: scale(1.15) rotate(360deg);
+		-webkit-transform: scale(1.1) rotate(360deg);
+		-moz-transform: scale(1.1) rotate(360deg);
+		-ms-transform: scale(1.1) rotate(360deg);
+		-o-transform: scale(1.1) rotate(360deg);
+	}
+
+	.social li a {
+		color: #EDEFF1;
+	}
+
+	.social li:hover {
+		border: 2px solid #2c3e50;
+		background: #0B111E;
+	}
+
+	.social li a i {
+		font-size: 16px;
+		margin: 0 0 0 5px;
+		color: #FFFFFF !important;
+	}
+
+		/* -- END STYLING OF FOOTER -- */
+
+	</style>
+
+</head>
+<body>
+
+	<!-- BEGIN NAVBAR HEADER -->
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="capstone1day7_sioco.html" style="color:#FFFFFF">MarahuyoGuides</a>
+				</div> <!--THIS DIV IS THE WHOLE NAVBAR HEADER -->
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="capstone1day7_sioco.html" style="color:#FFFFFF">Home</a></li> <!--THESE ARE THE LINK BUTTONS -->
+						<li><a href="capstone1day7_siocoAbout.html" style="color:#FFFFFF">About</a></li>
+						<li><a href="capstone1day7_siocoDiscover.html" style="color:#FFFFFF">Discover</a></li>
+						<li class="dropdown">
+								<a href="capstone1day7_siocoDiscover.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoKaizen.html">Kaizen</a></li>
+									<li><a href="capstone1day7_siocoOmotenashi.html">Omotenashi</a></li>
+									<li><a href="capstone1day7_siocoKodawari.html">Kodawari</a></li>
+								</ul>
+						</li>
+						<li class="active"><a href="capstone1day7_siocoExperience.html">Experience</a></li>
+						<li class="dropdown">
+								<a href="capstone1day7_siocoExperience.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoIkebana.html">Ikebana</a></li>
+									<li><a href="capstone1day7_siocoKendo.html">Kendo</a></li>
+									<li><a href="capstone1day7_siocoArchery.html">Kyudo</a></li>
+									<li><a href="capstone1day7_siocoRyokan.html">Ryokan</a></li>
+									<li><a href="capstone1day7_siocoKaiseki.html">Kaiseki</a></li>
+									<li><a href="capstone1day7_siocoShinkansen.html">Shinkansen</a></li>
+									<li><a href="capstone1day7_siocoMochi.html">Mochi</a></li>
+									<li><a href="capstone1day7_siocoSushi.html">Sushi</a></li>
+								</ul>
+							</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+<!-- END NAVBAR DEFAULT or SITE HEADER-->
+
+<!-- BEGIN BODY -->
+
+<!-- BEGIN SECTION ABOUT LANDING -->
+	
+	<div class="container-fluid">
+		<div class="row">
+			<img class="landingimg img-responsive" src="archery.png">
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+				<div class="abouttext">
+					<h1 style="text-align:center">HISTORY</h1>
+						<br>
+					<p style="text-align:justify">Kyūdō is the Japanese martial art of archery. Experts in kyūdō are referred to as kyūdōka (弓道家). Kyūdō is based on kyūjutsu ("art of archery"), which originated with the samurai class of feudal Japan. During the changes to Japan brought by opening up to the outside world at the beginning of the Meiji era (1868–1912), the samurai lost their status. Therefore, all martial arts, including kyūdō, saw a significant decrease in instruction and appreciation. In 1896, a group of kyūdō masters gathered to save traditional archery. Honda Toshizane, the kyūdō teacher for the Imperial University of Tokyo, merged the war and ceremonial shooting styles, creating a hybrid called Honda-ryū. However, it took until 1949 before the All Japanese Kyudo Federation (ANKF; Japanese: Zen Nihon Kyūdō Renmei) was formed. Guidelines published in the 1953 kyūdō kyohon define how, in a competition or graduation, archers from different schools can shoot together in unified form.</p>
+
+					<p style="text-align:justify">Kyūdō is practised in many different schools, some of which descend from military shooting and others that descend from ceremonial or contemplative practice. Therefore, the emphasis is different. Some emphasise aesthetics and others efficiency. Contemplative schools teach the form as a meditation in action. In certain schools, to shoot correctly will result inevitably in hitting the desired target. For this a phrase seisha hitchū, "true shooting, certain hitting", is used. According to the Nippon Kyūdō Federation the supreme goal of kyūdō is the state of shin-zen-bi, roughly "truth-goodness-beauty", which can be approximated as: when archers shoot correctly (i.e. truthfully) with virtuous spirit and attitude toward all persons and all things which relate to kyūdō (i.e. with goodness), beautiful shooting is realised naturally.</p>
+
+					<small>Sourced from: Wikipedia Commons --- Image Created from: Canva</small>
+				</div>
+		</div>
+	</div>
+
+<!-- END SECTION ABOUT LANDING -->
+
+<!-- BEGIN SECTION ABOUT -->
+
+	<br>
+	<hr class="grey">
+	<br>
+	<h1 style="text-align: center">WHERE TO GO</h1>
+	<br>
+	<br>
+	<div class="container">
+		<div class="row">
+			  <div class="col-sm-6 col-md-6">
+				<img class="expimg img-responsive" src="kyudo2.jpg" alt="..."></div>
+			<div class="col-sm-6 col-md-6">
+
+				<h2><a href="http://www.mifa.jp/mifa2/sport/index.html">Meguro International Friendship Association</a></h2>
+
+				<p style="font-weight: bold">2-19-15 Kamimeguro, Meguro-ku, Tokyo, 153-0051</p>
+
+				<p>The MIFA organization was set up with the main intention of promoting cultural exchange between the Japanese and foreigners. Along with it's many opportunities, it hosts a free Kyudo experience session to Archery newbies, veterans and enthusiasts alike.</p>
+
+				<p>Every Sports Day in Japan (2nd Monday of October every year), MIFA runs it's yearly Kyudo Class open for everyone. It is required of interested parties to contact MIFA as slots are very limited.</p>
+
+				<p>If you can't make it for that date, keep abreast on MIFA's updates as they are likely to host other Kyudo events too, although some of them might come with an admission fee.(Usually under 500 yen) So stay tuned to their website for news!</p>
+
+			    <p><a href="https://www.google.com/maps/place/%EF%BC%88%E5%85%AC%E8%B2%A1%EF%BC%89%E7%9B%AE%E9%BB%92%E5%8C%BA%E5%9B%BD%E9%9A%9B%E4%BA%A4%E6%B5%81%E5%8D%94%E4%BC%9A/@35.6413429,139.696678,17z/data=!3m1!4b1!4m5!3m4!1s0x60188b4832dd047f:0x3178703af51a8160!8m2!3d35.6413386!4d139.6988667" class="btn btn-primary btn-block" role="button" style="background-color:#0B111E">Locate</a></p>
+			</div>
+		</div>
+	</div>
+
+<!-- END SECTION ABOUT -->
+
+<!-- BEGIN JAVASCRIPT -->
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- END OF JAVASCRIPT -->
+
+
+<!-- BEGIN FOOTER -->
+<footer>
+	<hr class="grey">
+	    <div class="footer navbar-bottom" id="footer">	        
+	        <div class="container">
+	        	<div class="row">
+		           <p class="pull-left" style="color:#ffffff"> Copyright &copy Miguel Martin Sioco 2018. <bold>MarahuyoGuides</bold>.</p>
+		            	<div class="pull-right">
+		                	<ul class="social">
+			                   <li><a href="https://www.facebook.com/miguelmartin.sioco"><i class="fa fa-facebook"></i></a></li>
+			                    <li> <a href="https://www.instagram.com/miguelsioco/"><i class="fa fa-instagram"></i></a></li>
+			                    <li> <a href="https://www.linkedin.com/in/miguelmartinsioco/"><i class="fa fa-linkedin"></i></a></li>
+		                	</ul>
+		                	<br>
+		            	</div>
+	        	</div>
+	    	</div>
+	    </div>
+</footer>
+
+	
+
+	<!-- CLOSE FOOTER -->
+
+</body>
+</html>

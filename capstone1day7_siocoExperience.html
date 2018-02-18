@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport", content="device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+	<link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
+
+	<title>Experience - MarahuyoGuides</title>
+
+	<style>
+
+	/* -- UNIVERSAL STYLING -- */
+
+	* {
+		box-sizing: border-box;
+		margin: 0px;
+	}
+
+	/* -- BEGIN GENERAL TEXT STYLING -- */
+
+	body {
+		padding-top:60px;
+	}
+
+	h1 {
+		font-family: 'Oswald', sans-serif;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-family:'Lato', sans-serif;
+	}
+
+	p {
+		font-family:'Lato', sans-serif;
+		font-weight: lighter;
+	}
+
+	a {
+		font-family:'Lato', sans-serif;
+	}
+
+	/* -- END GENERAL TEXT STYLING -- */
+
+	/* -- BEGIN NAVBAR STYLING -- */
+
+	.navbar-brand {
+		color: #0B111E;
+		font-family:'Oswald', sans-serif;
+		font-weight: bold;
+		font-size: 25px;
+	}
+
+
+	.navbar {
+		background-color: #0B111E;
+	}
+
+	/* -- END NAVBAR STYLING -- */
+
+	/* -- BEGIN BODY SECTION STYLING -- */
+
+	.abouttext {
+		padding: 10px;
+	}
+
+	.imagebox {
+	  background: black;
+	  padding: 0px;
+	  margin: 5px;
+	  position: relative;
+	  text-align: center;
+	  width: 100%;
+	}
+
+	.imagebox img {
+	  opacity: 1;
+	  transition: 0.5s opacity;
+	}
+
+	.imagebox .imagebox-desc {
+	  background-color: rgba(0, 0, 0, 0.6);
+	  bottom: 0px;
+	  color: white;
+	  font-size: 1.2em;
+	  left: 0px;
+	  padding: 10px 15px;
+	  position: absolute;
+	  transition: 0.5s padding;
+	  text-align: center;
+	  width: 100%;
+	  font-family:'Oswald', sans-serif;
+	}
+
+	.imagebox:hover img {
+	  opacity: 0.7;
+	}
+
+	.imagebox:hover .imagebox-desc {
+	  padding-bottom: 10%;
+	  border: 2px solid white;
+	  color: orange;
+	  background-color: #0B111E;
+	}
+
+	/* -- END STYLING OF ABOUT SECTION -- */
+
+		/* -- BEGIN STYLING OF FOOTER -- */
+
+	footer {
+		background-color: #0B111E;
+		padding-bottom:5px;
+	}
+
+	.social li {
+		background: none repeat scroll 0 0 #3B5998;
+		border: 2px solid #B5B5B5;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		border-radius: 50%;
+		float: left;
+		height: 36px;
+		line-height: 36px;
+		margin: 0 8px 0 0;
+		padding: 0;
+		text-align: center;
+		width: 36px;
+		transition: all 0.5s ease 0s;
+		-moz-transition: all 0.5s ease 0s;
+		-webkit-transition: all 0.5s ease 0s;
+		-ms-transition: all 0.5s ease 0s;
+		-o-transition: all 0.5s ease 0s;
+	}
+
+	.social li:hover {
+		transform: scale(1.15) rotate(360deg);
+		-webkit-transform: scale(1.1) rotate(360deg);
+		-moz-transform: scale(1.1) rotate(360deg);
+		-ms-transform: scale(1.1) rotate(360deg);
+		-o-transform: scale(1.1) rotate(360deg);
+	}
+
+	.social li a {
+		color: #EDEFF1;
+	}
+
+	.social li:hover {
+		border: 2px solid #2c3e50;
+		background: #0B111E;
+	}
+
+	.social li a i {
+		font-size: 16px;
+		margin: 0 0 0 5px;
+		color: #FFFFFF !important;
+	}
+
+		/* -- END STYLING OF FOOTER -- */
+
+		/* -- BEGIN STYLING OF MODAL CONTENT -- */
+
+	#adimg1, #adimg2, #adimg3 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+	}
+
+	#adimg1:hover {
+		opacity: 0.7;
+		background-color: #0B111E;
+	}
+
+	#adimg2:hover {
+		opacity: 0.7;
+		background-color: #0B111E;
+	}
+
+	/* The Modal (background) */
+	.modal {
+	    display: none; 
+	    position: fixed; 
+	    z-index: 1; 
+	    padding-top: 100px; 
+	    left: 0;
+	    top: 0;
+	    width: 100%; 
+	    height: 100%; 
+	    overflow: auto; 
+	    background-color: rgb(0,0,0); 
+	    background-color: rgba(0,0,0,0.9); 
+	}
+
+	/* Modal Content (image) */
+	.modal-content {
+	    margin: auto;
+	    display: block;
+	    width: 80%;
+	    max-width: 700px;
+	}
+
+	/* Caption of Modal Image */
+	#caption {
+	    margin: auto;
+	    display: block;
+	    width: 80%;
+	    max-width: 700px;
+	    text-align: center;
+	    color: #ccc;
+	    padding: 10px 0;
+	    height: 150px;
+	}
+
+	/* Add Animation */
+	.modal-content, #caption {    
+	    -webkit-animation-name: zoom;
+	    -webkit-animation-duration: 0.6s;
+	    animation-name: zoom;
+	    animation-duration: 0.6s;
+	}
+
+	@-webkit-keyframes zoom {
+	    from {-webkit-transform:scale(0)} 
+	    to {-webkit-transform:scale(1)}
+	}
+
+	@keyframes zoom {
+	    from {transform:scale(0)} 
+	    to {transform:scale(1)}
+	}
+
+	/* The Close Button */
+	.close {
+	    position: absolute;
+	    top: 55px;
+	    right: 50px;
+	    color: #ffffff;
+	    font-size: 80px;
+	    font-weight: bold;
+	    transition: 0.3s;
+	}
+
+	.close:hover,
+	.close:focus {
+	    color: #ffffff;
+	    text-decoration: none;
+	    cursor: pointer;
+	}
+
+	/* 100% Image Width on Smaller Screens */
+	@media only screen and (max-width: 700px){
+	.modal-content {
+	    width: 100%;
+	 }
+
+	 	 /* -- END STYLING OF MODAL CONTENT -- */
+
+
+
+	</style>
+
+</head>
+<body>
+
+		<!-- BEGIN JAVASCRIPT -->
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+
+	<!-- END OF JAVASCRIPT -->
+
+	<!-- BEGIN NAVBAR HEADER -->
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="capstone1day7_sioco.html" style="color:#FFFFFF">MarahuyoGuides</a>
+				</div> <!--THIS DIV IS THE WHOLE NAVBAR HEADER -->
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="capstone1day7_sioco.html" style="color:#FFFFFF">Home</a></li> <!--THESE ARE THE LINK BUTTONS -->
+						<li><a href="capstone1day7_siocoAbout.html" style="color:#FFFFFF">About</a></li>
+						<li><a href="capstone1day7_siocoDiscover.html" style="color:#FFFFFF">Discover</a></li>
+						<li class="dropdown">
+								<a href="capstone1day7_siocoDiscover.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoKaizen.html">Kaizen</a></li>
+									<li><a href="capstone1day7_siocoOmotenashi.html">Omotenashi</a></li>
+									<li><a href="capstone1day7_siocoKodawari.html">Kodawari</a></li>
+								</ul>
+						</li>
+						<li class="active"><a href="capstone1day7_siocoExperience.html">Experience</a></li>
+						<li class="dropdown">
+								<a href="capstone1day7_siocoExperience.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret" style="color:#FFFFFF"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="capstone1day7_siocoIkebana.html">Ikebana</a></li>
+									<li><a href="capstone1day7_siocoKendo.html">Kendo</a></li>
+									<li><a href="capstone1day7_siocoArchery.html">Kyudo</a></li>
+									<li><a href="capstone1day7_siocoRyokan.html">Ryokan</a></li>
+									<li><a href="capstone1day7_siocoKaiseki.html">Kaiseki</a></li>
+									<li><a href="capstone1day7_siocoShinkansen.html">Shinkansen</a></li>
+									<li><a href="capstone1day7_siocoMochi.html">Mochi</a></li>
+									<li><a href="capstone1day7_siocoSushi.html">Sushi</a></li>
+								</ul>
+							</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+<!-- END NAVBAR DEFAULT or SITE HEADER-->
+
+<!-- BEGIN BODY -->
+
+<!-- BEGIN TOP STORIES SECTION -->
+
+		<div class="container">
+		  <div class="row">
+		  <h1 style="text-align: center">Choose Your Experience</h1>
+		  <hr class="grey">
+		  <br>
+		  <br>
+		    <div class="col-sm-4">
+		      <div class="imagebox">
+		        <a href="capstone1day7_siocoKaizen.html">
+		          <img src="expkendo.jpg"  class="category-banner img-responsive">
+		          <span class="imagebox-desc">Experience Kaizen</span>
+		        </a>
+		      </div>
+		    </div>
+		    
+		    <div class="col-sm-4">
+		      <div class="imagebox">
+		        <a href="capstone1day7_siocoOmotenashi.html">
+		          <img src="omot.jpg"  class="category-banner img-responsive">
+		          <span class="imagebox-desc">Experience Omotenashi</span>
+		        </a>
+		      </div>
+		    </div>
+		    
+		    <div class="col-sm-4">
+		      <div class="imagebox">
+		        <a href="capstone1day7_siocoKodawari.html">
+		          <img src="expkodo.jpg"  class="category-banner img-responsive">
+		          <span class="imagebox-desc">Experience Kodawari</span>
+		        </a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+<!-- END TOP STORIES SECTION -->
+
+<!-- BEGIN DISCOVER ABOUT SECTION -->
+	<br>
+	<br>
+	<hr class="grey">
+	<div class="container">
+		<div class="row">
+				 <div class="col-md-4 ads">
+					<img id="adimg1" class="adimg img-responsive" src="ikebana.jpg" alt="The art of flower arrangement. Ikebana is world-renowned for it's practice and application." style="text-align: center">
+
+					<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					</div>
+
+					<br>
+
+					<img id="adimg2" class="adimg img-responsive" src="ryokan.jpg" alt="Ryokans are the ideal places to soak up cultural history on Omotenashi." style="text-align: center">
+
+					<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					</div>
+
+					<br>
+
+					<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					</div>
+
+				</div>
+
+				<div class="col-md-8 abouttext">
+					<h1 style="text-align:center">EXPERIENCE JAPAN</h1>
+						<br>
+					<p style="text-align:justify">Japan is truly timeless, a place where ancient traditions are fused with modern life as if it were the most natural thing in the world. Japan is a long and slender, highly volcanic archipelago. It's over two-thirds mountains, with bubbling hot springs at every turn. In the warmer months there is excellent hiking, through cedar groves and fields of wildflowers, up to soaring peaks and ancient shrines (the latter founded by wandering ascetics). In the winter, all this is covered with snow and the skiing is world class. (And if you've never paired hiking or skiing with soaking in onsen, you don't know what you've been missing.) Meanwhile in the southern reaches, there are tropical beaches for sunning, snorkelling, diving and surfing.</p>
+
+					<br>
+
+					<p style="text-align:justify">The neon-lit streetscapes of Japan's cities look like sci-fi film sets, even though many of them are decades old. Meanwhile, cities such as Tokyo and Osaka have been adding new architectural wonders that redefine what buildings – and cities – should look like. There's an indelible buzz to these urban centres, with their vibrant street life, 24-hour drinking and dining scenes, and creative hubs that turn out fashion and pop culture trends consumed the world over. Travel is always smooth and efficient, whether you're using the subway to get around or the shinkansen (bullet trains) to go from one city to the next.</p>
+				</div>
+		</div>
+	</div>
+
+<!-- END DISCOVER ABOUT SECTION -->
+
+
+<!-- BEGIN FOOTER -->
+<footer>
+	<hr class="grey">
+	    <div class="footer navbar-bottom" id="footer">	        
+	        <div class="container">
+	        	<div class="row">
+		           <p class="pull-left" style="color:#ffffff"> Copyright &copy Miguel Martin Sioco 2018. <bold>MarahuyoGuides</bold>.</p>
+		            	<div class="pull-right">
+		                	<ul class="social">
+			                    <li><a href="https://www.facebook.com/miguelmartin.sioco"><i class="fa fa-facebook"></i></a></li>
+			                    <li> <a href="https://www.instagram.com/miguelsioco/"><i class="fa fa-instagram"></i></a></li>
+			                    <li> <a href="https://www.linkedin.com/in/miguelmartinsioco/"><i class="fa fa-linkedin"></i></a></li>
+		                	</ul>
+		                	<br>
+		            	</div>
+	        	</div>
+	    	</div>
+	    </div>
+</footer>
+
+	<!-- CLOSE FOOTER -->
+
+<script>
+
+	// Get the modal
+	var modal = document.getElementById('myModal');
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById('adimg1');
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+	    modal.style.display = "block";
+	    modalImg.src = this.src;
+	    captionText.innerHTML = this.alt;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	    modal.style.display = "none";
+	}
+
+	// CLOSE 1ST IMAGE MODAL
+
+	var modal = document.getElementById('myModal');
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById('adimg2');
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+	    modal.style.display = "block";
+	    modalImg.src = this.src;
+	    captionText.innerHTML = this.alt;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	    modal.style.display = "none";
+	}
+
+	// CLOSE 2ND IMAGE MODAL
+
+	var modal = document.getElementById('myModal');
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById('adimg3');
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+	    modal.style.display = "block";
+	    modalImg.src = this.src;
+	    captionText.innerHTML = this.alt;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	    modal.style.display = "none";
+	}
+
+	// CLOSE 3RD IMAGE MODAL
+
+</script>
+
+</body>
+</html>
